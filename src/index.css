@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 p-0 box-border;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.circle {
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 30px rgba(19, 255, 0, 0.8), 0 0 50px rgba(19, 255, 0, 0.6),
+    0 0 70px rgba(19, 255, 0, 0.4);
+}
+
+@media screen and (max-width: 500px) {
+  .circle {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .circle {
+    left: 10%;
+  }
+}
+
+.trapezoid {
+  height: 100vh;
+  border-right: 300px solid transparent; /* Setengah dari lebar atas */
+  border-bottom: 100vh solid #202020; /* Tinggi trapesium dan warna */
+}
