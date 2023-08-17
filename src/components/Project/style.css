@@ -1,0 +1,57 @@
+.content-card-hover {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-card-hover img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.content-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  opacity: 0;
+}
+
+.content-hover:hover {
+  opacity: 1;
+}
+
+.content-hover h2 {
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+.content-hover P {
+  font-size: 12px;
+  padding: 20px 10px;
+  text-align: justify;
+  color: white;
+}
+.content-hover > * {
+  transform: translateY(25px);
+  transition: transform 0.5s;
+}
+
+.content-hover:hover > * {
+  transform: translateY(0px);
+}
+
+.text-name {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

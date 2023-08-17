@@ -9,6 +9,16 @@ body {
 .icon {
   font-size: 30px;
 }
+@keyframes putar {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(
+      360deg
+    ); /* Rotasi akhir 360 derajat (satu putaran penuh) */
+  }
+}
 
 .circle {
   left: 50%;
@@ -16,6 +26,7 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 30px rgba(19, 255, 0, 0.8), 0 0 50px rgba(19, 255, 0, 0.6),
     0 0 70px rgba(19, 255, 0, 0.4);
+  /* animation: putar 1s linear infinite; */
 }
 
 @media screen and (max-width: 500px) {
@@ -34,4 +45,24 @@ body {
   height: 100vh;
   border-right: 300px solid transparent; /* Setengah dari lebar atas */
   border-bottom: 100vh solid #202020; /* Tinggi trapesium dan warna */
+}
+
+.card-skill {
+  transform: translate(-50%, -0%);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+.card-project {
+  box-shadow: 0px 4px 4px 0px rgba(204, 100, 100, 0.16);
 }
