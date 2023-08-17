@@ -1,11 +1,14 @@
 const About = () => {
   return (
     <section className="min-w-full  flex flex-col justify-center items-center py-10 px-4 md:px-8 lg:px-20 gap-14  relative ">
-      <div className=" flex flex-col items-center gap-3">
+      <div
+        data-aos="fade-up-right"
+        className=" flex flex-col items-center gap-3"
+      >
         <h1 className="text-5xl font-bold uppercase">About Me</h1>
         <hr className="border-primary-100 fonr-bold border-1 h-[5px] w-16 " />
       </div>
-      <p className=" w-auto lg:w-1/2 text-justify">
+      <p data-aos="fade-up-left" className=" w-auto lg:w-1/2 text-justify">
         As a 6th-semester student in the Information Systems program at Bina
         Sarana Informatika University, I have been focusing on becoming a
         Software Engineer specialized in Front-End development. I have a high

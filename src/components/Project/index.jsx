@@ -105,7 +105,7 @@ const Project = () => {
       id="projects"
       className="py-20 text-white min-w-full relative overflow-hidden "
     >
-      <div data-aos="fade-up" className="text-center z-50 relative">
+      <div data-aos="fade-right" className="text-center z-10 relative">
         <div className=" flex flex-col items-center m-0 p-0">
           <h1 className="text-4xl font-bold uppercase ">
             My <span className="text-primary-100">Projects</span>
@@ -116,8 +116,8 @@ const Project = () => {
       </div>
       <br />
       <div
-        data-aos="fade-down"
-        className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative "
+        data-aos="fade-left"
+        className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative z-20 "
       >
         <div className=" w-full">
           <Swiper
@@ -181,8 +181,8 @@ const Project = () => {
         </div>
       </div>
       {/* uhh */}
-      <div className="circle-2 h-[80vh] w-[80vh] rounded-full bg-primary-600 absolute -bottom-40 -left-60 "></div>
-      <div className="circle-2 h-[80vh] w-[80vh] rounded-full bg-primary-600 absolute -top-20 -right-60 "></div>
+      <div className="circle-2 h-[80vh] w-[80vh] rounded-full bg-primary-600 absolute -bottom-40 -left-60 z-10 "></div>
+      <div className="circle-2 h-[80vh] w-[80vh] rounded-full bg-primary-600 absolute -top-20 -right-60 z-10"></div>
     </section>
   );
 };

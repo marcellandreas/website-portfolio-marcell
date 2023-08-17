@@ -1,12 +1,5 @@
+import Aos from "aos";
 const Banner = () => {
-  //   const handleDownload = () => {
-  //     const link = document.createElement("a");
-  //     link.href = "../assets/CV_Marcell.pdf";
-  //     link.download = "cv_marcell.pdf";
-  //     document.body.appendChild(link);
-  //     link.click();
-  //     document.body.removeChild(link);
-  //   };
   const contacts = [
     {
       logo: "logo-github",
@@ -20,7 +13,10 @@ const Banner = () => {
   return (
     <section className=" h-screen min-w-full bg-primary-300 ">
       <div className="w-[480px] h-[480px] rounded-full border-8 shadow-sm border-primary-100 absolute circle animate-pulse hover: transition-opacity" />
-      <aside className="text-white relative z-10 flex flex-col px-4 md:pl-16 justify-center h-screen w-full  md:w-[540px] gap-3 ">
+      <aside
+        className="text-white relative z-10 flex flex-col px-4 md:pl-16 justify-center h-screen w-full  md:w-[540px] gap-3 "
+        data-aos="fade-up"
+      >
         <h1 className="text-primary-100 text-2xl md:text-3xl lg:text-4xl  ">
           Marcell Andreas S. Duha
         </h1>
@@ -49,7 +45,7 @@ const Banner = () => {
 
             <button className="w-1/2 md:w-[200px] rounded-xl text-md font-bold text-primary-200 h-[52px] bg-primary-100 flex justify-center items-center gap-4">
               <a
-                href="/assets/CV_Marcell.pdf"
+                href="/assets/portfolio.pdf"
                 target="_blank"
                 className="flex justify-center items-center gap-4"
               >

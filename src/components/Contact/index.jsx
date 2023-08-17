@@ -23,14 +23,17 @@ const Contact = () => {
 
         <hr className="border-primary-100 fonr-bold border-1 h-[5px] w-16 " />
       </div>
-      <div className="w-full md:w-4/5 bg-primary-200  flex flex-wrap ">
+      <div
+        data-aos="fade-down"
+        className="w-full md:w-4/5 bg-primary-200  flex flex-wrap  "
+      >
         {/* 1 */}
         <div className="flex-[1] md:flex-[2] w-1/2 bg-[#272727] flex justify-center items-center flex-col py-10 ">
           <div className="flex items-center w-full pl-16 gap-2">
             <h1 className="font-semibold text-4xl">Contact</h1>
             <div className="flex-grow border border-white bg-white h-1  w-1/2 " />
           </div>
-          <div className="flex flex-col pl-8 md:pl-16 items-start w-full py-10 gap-5">
+          <div className="flex flex-col pl-2 md:pl-16 items-start w-full py-10 gap-5">
             <div className="flex gap-5 items-center justify-center text-xl">
               <ion-icon name="call-outline"></ion-icon>
               <div>+62-821-4184-0186</div>

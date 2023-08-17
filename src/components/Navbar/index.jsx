@@ -25,8 +25,9 @@ const Navbar = () => {
         nav ? `bg-gray-700` : "bg-transparent"
       }   fixed py-4 px-4 md:px-16 flex justify-between md:justify-normal `}
     >
-      <div>
-        <h1>Marcell</h1>
+      <div className="flex justify-center items-center bg-yellow-50 rounded-full">
+        {/* <h1>Marcell</h1> */}
+        <img src="./icon.png" alt="" className="w-10 h-10" />
       </div>
 
       <nav className="hidden md:flex gap-6 text-xl font-semibold text-white items-center justify-center cursor-pointer uppercase  m-auto ">
