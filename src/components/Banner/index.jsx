@@ -30,7 +30,7 @@ const Banner = () => {
           </p>
           <div className="mt-5 flex gap-10">
             <a
-              href="/assets/CV_Marcell.pdf"
+              href="/assets/CV-Marcell.pdf"
               target="_blank"
               className="w-1/2 md:w-[200px] rounded-xl text-md font-bold h-[52px] border-2 border-primary-100 flex justify-center items-center gap-4"
             >
