@@ -29,33 +29,33 @@ const Banner = () => {
             projects that solve real problems.
           </p>
           <div className="mt-5 flex gap-10">
-            <button className="w-1/2 md:w-[200px] rounded-xl text-md font-bold h-[52px] border-2 border-primary-100 ">
-              <a
-                href="/assets/CV_Marcell.pdf"
-                target="_blank"
-                className="flex justify-center items-center gap-4"
-              >
+            <a
+              href="/assets/CV_Marcell.pdf"
+              target="_blank"
+              className="w-1/2 md:w-[200px] rounded-xl text-md font-bold h-[52px] border-2 border-primary-100 flex justify-center items-center gap-4"
+            >
+              <button className="flex justify-center items-center gap-4">
                 <ion-icon
                   name="cloud-download-outline"
                   className="icon"
                 ></ion-icon>
                 Download CV
-              </a>
-            </button>
+              </button>
+            </a>
 
-            <button className="w-1/2 md:w-[200px] rounded-xl text-md font-bold text-primary-200 h-[52px] bg-primary-100 flex justify-center items-center gap-4">
-              <a
-                href="/assets/portfolio.pdf"
-                target="_blank"
-                className="flex justify-center items-center gap-4"
-              >
+            <a
+              href="/assets/portfolio.pdf"
+              target="_blank"
+              className="w-1/2 md:w-[200px] rounded-xl text-md font-bold text-primary-200 h-[52px] bg-primary-100 flex justify-center items-center gap-4"
+            >
+              <button className="flex justify-center items-center gap-4">
                 <ion-icon
                   name="arrow-down-circle-outline"
                   className="icon"
                 ></ion-icon>
                 Portfolio
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
         {/* icons */}
