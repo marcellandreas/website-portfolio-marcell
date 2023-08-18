@@ -1,4 +1,4 @@
-import Aos from "aos";
+import img from "../../assets/images/marcell.png";
 const Banner = () => {
   const contacts = [
     {
@@ -14,7 +14,7 @@ const Banner = () => {
     <section className=" h-screen min-w-full bg-primary-300 ">
       <div className="w-[480px] h-[480px] rounded-full border-8 shadow-sm border-primary-100 absolute circle animate-pulse hover: transition-opacity" />
       <aside
-        className="text-white relative z-10 flex flex-col px-4 md:pl-16 justify-center h-screen w-full  md:w-[540px] gap-3 "
+        className="text-white relative z-20 flex flex-col px-4 md:pl-16 justify-center h-screen w-full  md:w-[540px] gap-3 "
         data-aos="fade-up"
       >
         <h1 className="text-primary-100 text-2xl md:text-3xl lg:text-4xl  ">
@@ -59,7 +59,7 @@ const Banner = () => {
           </div>
         </div>
         {/* icons */}
-        <div className="w-full flex gap-4 mt-5">
+        <div className=" flex gap-4 mt-5">
           {contacts.map((data, i) => {
             return (
               <a
@@ -74,7 +74,10 @@ const Banner = () => {
           })}
         </div>
       </aside>
-      <div className="a  absolute top-0 h-screen w-[60%] trapezoid"></div>
+      <div className="hidden md:block absolute top-[360px]  md:top-8 left-[35%] md:left-1/2 w-full h-screen  md:w-[410px] md:h-[420px] z-10 profile">
+        <img src={img} alt="" />
+      </div>
+      <div className="  absolute top-0 z-10 h-screen w-[60%] trapezoid"></div>
     </section>
   );
 };

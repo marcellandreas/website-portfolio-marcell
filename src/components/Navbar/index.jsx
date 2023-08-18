@@ -30,14 +30,14 @@ const Navbar = () => {
         <img src="./icon.png" alt="" className="w-10 h-10" />
       </div>
 
-      <nav className="hidden md:flex gap-6 text-xl font-semibold text-white items-center justify-center cursor-pointer uppercase  m-auto ">
+      <nav className="hidden md:flex gap-6 text-lg font-semibold text-white items-center justify-center cursor-pointer uppercase  m-auto ">
         <li className="list-none hover:text-primary-100">Home</li>
         <li className="list-none hover:text-primary-100">About</li>
         <li className="list-none hover:text-primary-100">Projects</li>
         <li className="list-none hover:text-primary-100">Contacts</li>
       </nav>
       <button
-        className="text-white z-[9999px] absolute right-0 block md:hidden"
+        className="text-white z-[9999px] block md:hidden"
         onClick={toggleMenu}
       >
         <svg
@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {menuOpen ? (
         // true
-        <div className="absolute bg-primary-100 top-14 h-[50vh] w-full left-0">
+        <div className="absolute bg-slate-800 p-5  top-16  w-full left-0">
           <nav className="block md:flex gap-6 text-lg p-4 font-semibold text-white items-center justify-center cursor-pointer uppercase  m-auto ">
             <li className="list-none hover:text-primary-100">Home</li>
             <li className="list-none hover:text-primary-100">About</li>

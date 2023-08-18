@@ -29,6 +29,17 @@ body {
   /* animation: putar 1s linear infinite; */
 }
 
+.profile {
+  transform: translate(-30%, -25%);
+}
+
+/* @media screen and (max-width: 1024px) {
+  .circle {
+    left: 50%;
+    top: 30%;
+  }
+} */
+
 @media screen and (max-width: 500px) {
   .circle {
     left: 30%;
@@ -46,6 +57,13 @@ body {
   border-right: 300px solid transparent; /* Setengah dari lebar atas */
   border-bottom: 100vh solid #202020; /* Tinggi trapesium dan warna */
 }
+/* @media screen and (max-width: 1024px) {
+  .trapezoid {
+    height: 50vh;
+    border-right: 300px solid transparent; 
+    border-bottom: 50vh solid #202020; 
+  }
+} */
 
 .card-skill {
   transform: translate(-50%, -0%);
