@@ -1,16 +1,7 @@
+import { contacts_banner } from "../../assets/data";
 import img from "../../assets/images/marcell.png";
 
 const Banner = () => {
-  const contacts = [
-    {
-      logo: "logo-github",
-      link: "https://github.com/marcellandreas",
-    },
-    {
-      logo: "logo-linkedin",
-      link: "https://www.linkedin.com/in/marcell-andreas-samadhani-duha/",
-    },
-  ];
   return (
     <section className="h-screen w-full bg-primary-300 relative overflow-hidden border-b-2">
       <div className="w-[420px] h-[420px] md:w-[480px] md:h-[480px] absolute rounded-full border-8 shadow-sm border-primary-100 circle animate-pulse hover:transition-opacity" />
@@ -28,7 +19,7 @@ const Banner = () => {
           </p>
           <div className="mt-0 md:mt-5 flex gap-10">
             <a
-              href="/assets/CV-Marcell.pdf"
+              href="/assets/resume-marcell-andreas-samadhani-duha.pdf"
               target="_blank"
               className="w-1/2 md:w-[200px] rounded-xl text-md font-bold h-[52px] border-2 border-primary-100 flex justify-center items-center gap-4"
             >
@@ -38,7 +29,7 @@ const Banner = () => {
               </button>
             </a>
 
-            <a
+            {/* <a
               href="/assets/portfolio.pdf"
               target="_blank"
               className="w-1/2 md:w-[200px] rounded-xl text-md font-bold text-primary-200 h-[52px] bg-primary-100 flex justify-center items-center gap-4"
@@ -50,11 +41,11 @@ const Banner = () => {
                 ></ion-icon>
                 <p className="  text-sm">Portfolio</p>
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="flex gap-4 mt-5">
-          {contacts.map((data, i) => (
+          {contacts_banner.map((data, i) => (
             <a
               key={i}
               href={data.link}

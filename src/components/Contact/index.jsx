@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { contact_info } from "../../assets/data";
+import { contacts_info } from "../../assets/data";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +53,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          {contact_info.map((info, index) => (
+          {contacts_info.map((info, index) => (
             <div
               key={index}
               className="flex items-center gap-4 text-lg md:text-xl"

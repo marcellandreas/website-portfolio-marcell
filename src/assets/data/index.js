@@ -246,8 +246,19 @@ export const MENU_NAVBAR = [
   },
 ];
 
-export const contact_info = [
+export const contacts_info = [
   { logo: "mail-outline", text: "marcellandreas.123@gmail.com" },
   { logo: "call-outline", text: "+6282141840186" },
   { logo: "location-outline", text: "Indonesia" },
+];
+
+export const contacts_banner = [
+  {
+    logo: "logo-github",
+    link: "https://github.com/marcellandreas",
+  },
+  {
+    logo: "logo-linkedin",
+    link: "https://www.linkedin.com/in/marcell-andreas-samadhani-duha/",
+  },
 ];
