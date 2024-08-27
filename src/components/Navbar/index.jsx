@@ -1,14 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { MENU_NAVBAR } from "../../assets/data";
+
+const NavLinks = ({ isMobile, onClick }) => (
+  <nav
+    className={`flex ${
+      isMobile ? "flex-col" : "flex-row"
+    } gap-6 text-lg font-semibold text-white items-center uppercase`}
+  >
+    {MENU_NAVBAR.map((data, index) => (
+      <a
+        key={index}
+        href={`#${data.name}`}
+        className="p-2 hover:text-primary-100 hover:border hover:border-primary-100 w-full text-center rounded-xl"
+        onClick={onClick}
+      >
+        {data.name}
+      </a>
+    ))}
+  </nav>
+);
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log(12);
   };
-
-  const [nav, setNav] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 50) {
@@ -17,29 +35,27 @@ const Navbar = () => {
       setNav(false);
     }
   };
-  window.addEventListener("scroll", changeBackground);
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => window.removeEventListener("scroll", changeBackground);
+  }, []);
 
   return (
     <header
-      className={`z-50 w-full ${
-        nav ? `bg-gray-700` : "bg-transparent"
-      }   fixed py-4 px-4 md:px-16 flex justify-between md:justify-normal `}
+      className={`z-50 w-full fixed py-4 px-4 md:px-16 flex items-center ${
+        nav ? "bg-primary-700" : "bg-primary-800 md:bg-transparent"
+      } transition-colors duration-300`}
     >
-      <div className="flex justify-center items-center bg-yellow-50 rounded-full">
-        {/* <h1>Marcell</h1> */}
-        <img src="./icon.png" alt="" className="w-10 h-10" />
+      <div className="flex flex-grow-0 items-center">
+        <img src="./icon.png" alt="Logo" className="w-10 h-10" />
       </div>
 
-      <nav className="hidden md:flex gap-6 text-lg font-semibold text-white items-center justify-center cursor-pointer uppercase  m-auto ">
-        <li className="list-none hover:text-primary-100">Home</li>
-        <li className="list-none hover:text-primary-100">About</li>
-        <li className="list-none hover:text-primary-100">Projects</li>
-        <li className="list-none hover:text-primary-100">Contacts</li>
-      </nav>
-      <button
-        className="text-white z-[9999px] block md:hidden"
-        onClick={toggleMenu}
-      >
+      <div className="hidden md:flex pl-0 md:pl-40 flex-grow justify-center">
+        <NavLinks />
+      </div>
+
+      <button className="text-white md:hidden ml-auto" onClick={toggleMenu}>
         <svg
           className="h-6 w-6"
           fill="none"
@@ -56,18 +72,10 @@ const Navbar = () => {
         </svg>
       </button>
 
-      {menuOpen ? (
-        // true
-        <div className="absolute bg-slate-800 p-5  top-16  w-full left-0">
-          <nav className="block md:flex gap-6 text-lg p-4 font-semibold text-white items-center justify-center cursor-pointer uppercase  m-auto ">
-            <li className="list-none hover:text-primary-100">Home</li>
-            <li className="list-none hover:text-primary-100">About</li>
-            <li className="list-none hover:text-primary-100">Projects</li>
-            <li className="list-none hover:text-primary-100">Contacts</li>
-          </nav>
+      {menuOpen && (
+        <div className="absolute md:hidden bg-primary-800 p-5 top-16 right-0 w-full left-0">
+          <NavLinks isMobile onClick={() => setMenuOpen(false)} />
         </div>
-      ) : (
-        <div className="hidden">bbb</div>
       )}
     </header>
   );

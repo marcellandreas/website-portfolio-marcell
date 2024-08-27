@@ -2,7 +2,7 @@ const Profile = () => {
   return (
     <aside
       className="text-white lg:hidden flex flex-col px-4 md:pl-16 justify-center h-screen w-full  md:w-[540px] gap-3 "
-      data-aos="fade-up"
+      // data-aos="fade-up"
     >
       <h1 className="text-primary-100 text-2xl md:text-3xl lg:text-4xl  ">
         Marcell Andreas S. Duha
