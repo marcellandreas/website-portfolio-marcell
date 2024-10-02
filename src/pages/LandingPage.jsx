@@ -1,13 +1,15 @@
 import { useEffect } from "react";
-import About from "../components/About";
-import Banner from "../components/Banner";
-import Contact from "../components/Contact";
-import Project from "../components/Project";
-import Skills from "../components/Skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Navbar from "../components/Navbar";
-import MyTimeline from "../components/MyTimeline";
+import {
+  About,
+  Banner,
+  Contact,
+  MyTimeline,
+  Navbar,
+  Project,
+  Skills,
+} from "../components";
 
 const LandingPage = () => {
   useEffect(() => {
