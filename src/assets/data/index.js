@@ -1,129 +1,3 @@
-export const Project_Data = [
-  {
-    img: "../assets/images/projects/capstone.jpeg",
-    name: "Capstone Project MSIB B3 – Aplikasi Pembayaran Online “My Cuan” ",
-    github_link: "https://github.com/capstone-proj-alterra-kel2/PPOB_ReactJS",
-    live_link: "https://ppob-react-js.vercel.app/",
-    private: false,
-    deskrispi: [
-      `"Payment Point Online Bank" or abbreviated as PPOB is a real-time online bill payment service available 24/7, enabling faster, accurate, and secure data and fund reconciliation processes.`,
-    ],
-  },
-  {
-    img: "../assets/images/projects/mini-project.jpeg",
-    name: "Mini Project MSIB B3 - Ticket bioskop",
-    github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-    private: false,
-    live_link: "http://m-tix.surge.sh/",
-    deskrispi: [
-      "This is an individual project at Alterra Academy, creating an interactive website for online cinema ticket booking, enabling users to enjoy a more convenient and comfortable movie-watching experience.",
-    ],
-  },
-  {
-    img: "../assets/images/projects/streaming.png",
-    name: "Self Project - Movies App with TMDB API React JS",
-    github_link: "https://github.com/Sridhar-C-25/highking",
-    private: false,
-    live_link: "https://m-film.surge.sh/",
-    deskrispi: [
-      "Self Project - Creating a professional website for streaming movies using the `TMDB API`.",
-    ],
-  },
-  {
-    img: "../assets/images/projects/todos.png",
-    name: "Self Project - To do app",
-    github_link: "https://github.com/marcellandreas/todos_app",
-    private: false,
-    live_link: "http://catatan-todo.surge.sh/",
-    deskrispi: [
-      "Self Project - Creating a simple website to perform CRUD operations by implementing it as a to-do list website.",
-    ],
-  },
-  {
-    img: "../assets/images/projects/qr.jpeg",
-    name: "Self Project - QR Generator",
-    github_link: "https://github.com/marcellandreas/simple-qr-code",
-    private: false,
-    live_link: "http://create-qr-code.surge.sh/",
-    deskrispi: [
-      "Self Project - Creating a simple website to convert links into QR codes.",
-    ],
-  },
-  {
-    img: "../assets/images/projects/first-app.png",
-    name: "Self Project - Slicing Real Estate",
-    github_link:
-      "https://github.com/marcellandreas/Slicing_page/tree/master/homeland",
-    private: false,
-    live_link: "",
-    deskrispi: [
-      "Self Project - Creating a real estate website by implementing Tailwind CSS and ReactJS in its development.",
-    ],
-  },
-  {
-    img: "../assets/images/projects/project-jawara.jpeg",
-    name: "Mini Bootcamp Progate HTML & CSS – Jawara Movie",
-    github_link: "https://github.com/marcellandreas/progate-project-jawara",
-    private: false,
-    live_link: "https://codesandbox.io/live/60ec9189f73",
-    deskrispi: [
-      "Creating a cinema ticket booking interface using HTML and basic CSS.",
-    ],
-  },
-  {
-    img: "../assets/images/projects/catalog.jpeg",
-    name: "Project-Based Virtual Intern : Frontend – Core Initiative x Rakamin Academy - Ecommerce-catalog",
-    github_link: "https://github.com/marcellandreas/ecommerce-catalog",
-    private: false,
-    live_link: "https://ecommerce-catalog-teal.vercel.app/",
-    deskrispi: [
-      "Project-Based Virtual Intern: Frontend - Core Initiative x Rakamin Academy - Created to fulfill the final assignment in the core initiative's internship, this project utilizes VueJS to develop an E-Commerce website focused on clothing purchases.",
-    ],
-  },
-  // {
-  //   img: "../assets/images/projects/project-travellian.jpeg",
-  //   name: "Landing Page Travellian",
-  //   github_link:
-  //     "https://github.com/marcellandreas/Slicing_page/tree/master/travellian",
-  //   live_link: "",
-  //   deskrispi: ["Landing Page Travellian"],
-  // },
-  {
-    img: "../assets/images/projects/idcamp-pemrogramanweb.png",
-    name: "IDCamp 2023 - Belajar Dasar Pemrograman Web",
-    github_link: "",
-    private: false,
-    live_link: "",
-    deskrispi: ["Landing Page Travellian"],
-  },
-  {
-    img: "../assets/images/projects/idcamp-fe-pemula.png",
-    name: "IDCamp 2023 - Belajar Membuat Front End Untuk Pemula",
-    github_link: "",
-    private: false,
-    live_link: "",
-    deskrispi: ["Landing Page Travellian"],
-  },
-  {
-    img: "../assets/images/projects/idcamp-react-pemula.png",
-    name: "IDCamp 2023 - Belajar Membuat Aplikasi Web Dengan React",
-    github_link: "",
-    private: false,
-    live_link: "",
-    deskrispi: ["Landing Page Travellian"],
-  },
-  {
-    img: "../assets/images/projects/bantex.png",
-    name: "Final Project Internship Bantex - Inventory Stock IT",
-    github_link: "",
-    private: true,
-    live_link: "",
-    deskrispi: [
-      "Merupakan Final Project untuk memehuni tugas yang diberikan oleh mentor di Bantex Indonesia",
-    ],
-  },
-];
-
 export const experience_projects = [
   {
     id: 1,
@@ -555,57 +429,6 @@ export const experience_projects = [
   },
 ];
 
-export const skills_Data = [
-  {
-    logo: "logo-html5",
-    name: "HTML",
-  },
-  {
-    logo: "logo-css3",
-    name: "CSS",
-  },
-  {
-    logo: "logo-javascript",
-    name: "JavaScript",
-  },
-  {
-    logo: "logo-react",
-    name: "ReactJS",
-  },
-  {
-    logo: "logo-vue",
-    name: "VueJS",
-  },
-  {
-    logo: "logo-next",
-    name: "NextJS",
-  },
-  {
-    logo: "logo-next",
-    name: "ExpressJS",
-  },
-  {
-    logo: "logo-next",
-    name: "Github",
-  },
-  {
-    logo: "logo-next",
-    name: "Tailwind",
-  },
-  {
-    logo: "logo-next",
-    name: "Booystarp",
-  },
-  {
-    logo: "",
-    name: "MySQL",
-  },
-  {
-    logo: "",
-    name: "Figma",
-  },
-];
-
 export const skillsData = {
   skills: [
     {
@@ -633,7 +456,6 @@ export const skillsData = {
       list: [
         { logo: "logo-github", name: "Git" },
         { logo: "logo-docker", name: "Docker" },
-        // { logo: "logo-firebase", name: "Firebase" },
         { logo: "logo-web-component", name: "Webpack" },
         { logo: "logo-npm", name: "Npm" },
       ],
@@ -642,10 +464,8 @@ export const skillsData = {
       category: "Cloud & DevOps",
       list: [
         { logo: "", name: "AWS" },
-        // { logo: "logo-azure", name: "Azure" },
         { logo: "", name: "Alibaba Cloud" },
-        // { logo: "", name: "CI/CD" },
-        // { logo: "logo-terraform", name: "Terraform" },
+        { logo: "", name: "CI/CD" },
       ],
     },
     {
