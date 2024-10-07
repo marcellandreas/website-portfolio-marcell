@@ -3,8 +3,8 @@ export const Project_Data = [
     img: "../assets/images/projects/capstone.jpeg",
     name: "Capstone Project MSIB B3 – Aplikasi Pembayaran Online “My Cuan” ",
     github_link: "https://github.com/capstone-proj-alterra-kel2/PPOB_ReactJS",
-    private: false,
     live_link: "https://ppob-react-js.vercel.app/",
+    private: false,
     deskrispi: [
       `"Payment Point Online Bank" or abbreviated as PPOB is a real-time online bill payment service available 24/7, enabling faster, accurate, and secure data and fund reconciliation processes.`,
     ],
@@ -124,6 +124,437 @@ export const Project_Data = [
   },
 ];
 
+export const experience_projects = [
+  {
+    id: 1,
+    name: "Capstone - Session Media Social",
+    img: "../assets/images/projects/capstone-1-sanbercode-NextJs.png",
+    role: "Front End Developer (NextJS)",
+    type: "Bootcamp Project",
+    source: "Sanbercode Bootcamp",
+    github: "https://github.com/marcellandreas/final-project-nextJS-B53",
+    live: "",
+    description:
+      "Created a social media platform that allows users to post, like, and share content, with real-time notifications.",
+    technologies: ["Next.js", "React.js", "RestApi", "State Management"],
+    team: {
+      size: 1,
+      roles: ["Front End Developer"],
+    },
+    responsibilities: [
+      "Designed and implemented frontend and backend features",
+      "Ensured seamless user experience across devices",
+      "Optimized database performance",
+    ],
+    startDate: "2024-01-15",
+    endDate: "2024-02-28",
+    status: "Completed",
+  },
+  {
+    id: 2,
+    name: "Project-Based Virtual Intern: Frontend – Core Initiative x Rakamin Academy - E-Commerce Catalog",
+    img: "../assets/images/projects/capstone-2-ecommerce-catalog.jpeg",
+    role: "Project-Based Virtual Intern: Frontend",
+    type: "Professional",
+    source: "Project-based Virtual Intern",
+    github: "https://github.com/marcellandreas/Capstone-ecommerce-catalog",
+    live: "",
+    description:
+      "E-Commerce Catalog adalah platform yang dikembangkan sebagai bagian dari program Project-Based Virtual Intern di Core Initiative x Rakamin Academy. Proyek ini dirancang untuk menampilkan katalog produk secara interaktif, memungkinkan pengguna untuk menjelajahi berbagai barang yang tersedia dengan mudah.",
+    technologies: ["Vue.js", "JSON", "CSS", "JavaScript"],
+    team: {
+      size: 1,
+      roles: ["Frontend Developer"],
+    },
+    responsibilities: ["Implemented responsive user interface"],
+    startDate: "2023-06-01",
+    endDate: "2023-06-30",
+    status: "Completed",
+  },
+  {
+    id: 3,
+    name: "Personal Portfolio Website",
+    img: "../assets/images/projects/web-portofolio.png",
+    role: "Full Stack Developer",
+    type: "Self Project",
+    source: "Personal",
+    github: "",
+    live: "",
+    description:
+      "Developed a personal portfolio website to showcase my projects, skills, and experiences, with a modern design and smooth user experience.",
+    technologies: ["React.js", "Tailwind Css"],
+    team: {
+      size: 1,
+      roles: ["Full Stack Developer"],
+    },
+    responsibilities: ["-"],
+    startDate: "2023-03-01",
+    endDate: "2023-03-15",
+    status: "Completed",
+  },
+  {
+    id: 4,
+    name: "Inventory Management System",
+    img: "../assets/images/projects/capstone-3-inventory-management.png",
+    role: "Fullstack Developer",
+    type: "Internship Project",
+    source: "Bantex Indonesia Internship",
+    github: "",
+    live: "",
+    description:
+      "Developed a backend system for managing inventory in a warehouse, including features for stock updates, reports, and tracking.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "React Js",
+      "MySql",
+      "Redux Toolkit",
+      "Tailwind Css",
+    ],
+    team: {
+      size: 1,
+      roles: ["Full stack Developer"],
+    },
+    responsibilities: [
+      "Designed and developed API for inventory tracking",
+      "Collaborated with frontend developers to ensure smooth API integration",
+      "Implemented database schemas and optimized queries for performance",
+    ],
+    startDate: "2023-09-01",
+    endDate: "2023-12-01",
+    status: "Completed",
+  },
+  {
+    id: 5,
+    name: "Kodebisat - Website Modern dengan Vue.js 2 ",
+    img: "../assets/images/projects/codepolitan-1-vuecli.png",
+    role: "Full Stack Mevn",
+    type: "Projects Kodebisat - Codepolitan",
+    source: "Full Stack Mevn Kodebisat Scholarship Participant",
+    github: "",
+    live: "",
+    description:
+      "Kelas online ini bertujuan untuk memperkenalkan peserta pada pengembangan web menggunakan framework Vue.js. Dalam program ini, peserta akan mempelajari langkah-langkah membangun aplikasi web interaktif, mulai dari dasar hingga implementasi dengan Vue CLI dan VueRouter. Dengan pendekatan praktis, peserta akan mengembangkan komponen reusable dan menerapkan gaya CSS, sehingga dapat merangkum dan menerapkan keterampilan yang diperoleh dalam proyek nyata sesuai standar industri.",
+    technologies: [
+      "Reactive",
+      "Vue.js",
+      "Hooks",
+      "Event & Method",
+      "Data Binding",
+      "Vue Router",
+    ],
+    team: {
+      size: 1,
+      roles: ["Full Stack Mevn"],
+    },
+    responsibilities: [
+      "Memahami langkah-langkah dasar dalam pembuatan website menggunakan Vue.js.",
+      "Mengimplementasikan template dan mengatur gaya CSS pada aplikasi Vue.",
+      "Mempelajari konsep dasar dan mendalam tentang Vue.js serta komponen-komponennya.",
+      "Membangun dan mengimplementasikan proyek menggunakan Vue CLI.",
+      "Mengintegrasikan VueRouter untuk manajemen rute dalam aplikasi.",
+    ],
+    startDate: "2023-07-01",
+    endDate: "2023-08-01",
+    status: "Completed",
+  },
+  {
+    id: 6,
+    name: "Kodebisat  - Website Reaktif dengan Vue.js 3 (Quizes) ",
+    img: "../assets/images/projects/codepolitan-2-quizzes.png",
+    role: "Full Stack Mevn",
+    type: "Projects Kodebisat - Codepolitan",
+    source: "Full Stack Mevn Kodebisat Scholarship Participant",
+    github: "",
+    live: "",
+    description: "",
+    technologies: ["Vue.js"],
+    team: {
+      size: 1,
+      roles: ["Full Stack Mevn"],
+    },
+    responsibilities: [
+      "Memahami Konsep Dasar: Mempelajari dan memahami konsep dasar Vue.js serta keunggulannya dalam pengembangan web.",
+      "Menguasai Teknik Pengembangan: Mengembangkan aplikasi web dinamis menggunakan teknik dan fitur terbaru di Vue 3.",
+      "Membuat Komponen Vue: Membangun dan mengelola komponen Vue dengan efektif untuk menciptakan antarmuka pengguna yang interaktif.",
+      "Implementasi Router: Menggunakan Vue Router untuk mengatur navigasi dalam aplikasi web yang dibangun.",
+      "Praktik Langsung: Melakukan latihan dan proyek yang memungkinkan penerapan pengetahuan yang diperoleh selama kelas.",
+    ],
+    startDate: "2023-07-01",
+    endDate: "2023-08-01",
+    status: "Completed",
+  },
+  {
+    id: 7,
+    name: "Kodebisat  - Website Reaktif dengan Vue.js 3 (Sticky Note) ",
+    img: "../assets/images/projects/codepolitan-3-sticky-note.png",
+    role: "Full Stack Mevn",
+    type: "Projects Kodebisat - Codepolitan",
+    source: "Full Stack Mevn Kodebisat Scholarship Participant",
+    github: "",
+    live: "",
+    description: "",
+    technologies: ["Vue.js"],
+    team: {
+      size: 1,
+      roles: ["Full Stack Mevn"],
+    },
+    responsibilities: [
+      "Memahami Konsep Dasar: Mempelajari dan memahami konsep dasar Vue.js serta keunggulannya dalam pengembangan web.",
+      "Menguasai Teknik Pengembangan: Mengembangkan aplikasi web dinamis menggunakan teknik dan fitur terbaru di Vue 3.",
+      "Membuat Komponen Vue: Membangun dan mengelola komponen Vue dengan efektif untuk menciptakan antarmuka pengguna yang interaktif.",
+      "Implementasi Router: Menggunakan Vue Router untuk mengatur navigasi dalam aplikasi web yang dibangun.",
+      "Praktik Langsung: Melakukan latihan dan proyek yang memungkinkan penerapan pengetahuan yang diperoleh selama kelas.",
+    ],
+    startDate: "2023-07-01",
+    endDate: "2023-08-01",
+    status: "Completed",
+  },
+  {
+    id: 8,
+    name: "Kodebisat - Fullstack Tutorial MongoDB, Express, Vue, Node - Shopping Cart ",
+    img: "../assets/images/projects/codepolitan-4-belajar-mevn.png",
+    role: "Full Stack Mevn",
+    type: "Projects Kodebisat - Codepolitan",
+    source: "Full Stack Mevn Kodebisat Scholarship Participant",
+    github: "",
+    live: "",
+    description: "",
+    technologies: ["Vue.js"],
+    team: {
+      size: 1,
+      roles: ["Full Stack Mevn"],
+    },
+    responsibilities: ["-"],
+    startDate: "2023-07-01",
+    endDate: "2023-08-01",
+    status: "Completed",
+  },
+  {
+    id: 9,
+    name: "Belajar Dasar Pemrograman Web",
+    img: "../assets/images/projects/idcamp-pemrogramanweb.png",
+    role: "React Developer",
+    type: "Submission Dicoding",
+    source: "Dicoding Academy",
+    github: "",
+    live: "",
+    description:
+      "Submission: tugas akhir membuat halaman website menggunakan teknik semantic HTML dan layouting",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    team: {
+      size: 1,
+      roles: ["React Developer"],
+    },
+    responsibilities: [
+      "Desain dan Pengembangan: Membuat struktur dan layout website menggunakan HTML5 dan CSS3.",
+      "Interaktivitas: Mengimplementasikan fungsionalitas menggunakan JavaScript Vanilla untuk meningkatkan pengalaman pengguna.",
+      "Kepatuhan Standar: Memastikan website sesuai dengan standar web dan responsif di berbagai perangkat.",
+    ],
+    startDate: "2023-07-01",
+    endDate: "2023-08-01",
+    status: "Completed",
+  },
+  {
+    id: 10,
+    name: "Submission Dicoding - Front end web (pemula)",
+    img: "../assets/images/projects/idcamp-fe-pemula.png",
+    role: "React Developer",
+    type: "Submission Dicoding",
+    source: "Dicoding Academy",
+    github: "",
+    live: "",
+    description:
+      "Kelas ini melatih Front-End Web Developer dalam membangun aplikasi web interaktif menggunakan HTML5, CSS3, dan JavaScript. Proyek akhir mencakup pembuatan website yang menampilkan informasi, memiliki interaktivitas, dan menggunakan Web Storage untuk penyimpanan data. Total waktu penyelesaian proyek adalah 45 jam.",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    team: {
+      size: 1,
+      roles: ["React Developer"],
+    },
+    responsibilities: [
+      " Mempelajari BOM & DOM: Memahami penerapan BOM dan DOM.",
+      "Manipulasi DOM: Menggunakan JavaScript untuk memanipulasi DOM.",
+      "Event Interaktif: Menerapkan event pada elemen HTML.",
+
+      "Web Storage: Menggunakan API Web Storage untuk penyimpanan data.",
+      "Proyek Akhir: Membuat website menggunakan teknik yang dipelajari.",
+      "Waktu Manajemen: Mengatur waktu untuk menyelesaikan modul.",
+      "Evaluasi Pembelajaran: Menilai pemahaman dan keterampilan yang diperoleh.",
+    ],
+    startDate: "2023-07-01",
+    endDate: "2023-08-01",
+    status: "Completed",
+  },
+  {
+    id: 11,
+    name: "Submission Dicoding - Aplikasi web dengan React",
+    img: "../assets/images/projects/idcamp-react-pemula.png",
+    role: "React Developer",
+    type: "Submission Dicoding",
+    source: "Dicoding Academy",
+    github: "",
+    live: "",
+    description:
+      "Kelas ini dirancang untuk Front-End Web Developer yang ingin menguasai React. Peserta akan belajar membangun aplikasi web dengan komponen UI yang reusable, deklaratif, dan reaktif. Setelah menyelesaikan kelas, siswa dapat membuat aplikasi yang memanfaatkan functional, stateful, dan controlled components. Evaluasi dilakukan melalui proyek akhir yang mengimplementasikan konsep-konsep yang dipelajari.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "React.js"],
+    team: {
+      size: 1,
+      roles: ["React Developer"],
+    },
+    responsibilities: [
+      "Mengembangkan aplikasi web menggunakan React dengan komponen UI yang reusable.",
+      "Menerapkan konsep deklaratif dalam penulisan kode.",
+      "Mengelola state menggunakan stateful component.",
+      "Membuat controlled component untuk menangani input pengguna.",
+      "Menggunakan best practices dalam membangun antarmuka pengguna yang interaktif.",
+      "Mengimplementasikan unidirectional data flow dalam aplikasi.",
+    ],
+    startDate: "2023-08-01",
+    endDate: "2023-11-24",
+    status: "Completed",
+  },
+  {
+    id: 12,
+    name: "Aplikasi Pembayaran Online “My Cuan” ",
+    img: "../assets/images/projects/alterra-3-capstone.jpeg",
+    role: "React Developer",
+    type: "Capstone Project MSIB B3",
+    source: "Kampus Merdeka (MSIB Batch 3) Altera academy",
+    github: "https://github.com/capstone-proj-alterra-kel2/PPOB_ReactJS",
+    live: "https://ppob-react-js.vercel.app/",
+    description:
+      '"Payment Point Online Bank" (PPOB) adalah platform pembayaran yang memfasilitasi transaksi untuk berbagai jenis pembayaran seperti listrik, air, dan pembayaran lainnya.',
+    technologies: ["React.js", "Express.js", "MySQL"],
+    team: {
+      size: 6,
+      roles: ["Frontend Developer", "Team Leader"],
+    },
+    responsibilities: [
+      "Lead team meetings and project planning sessions",
+      "Designed user interfaces and implemented them using React",
+      "Collaborated with backend developers to integrate APIs",
+    ],
+    startDate: "2023-08-01",
+    endDate: "2023-09-30",
+    status: "Completed",
+  },
+  {
+    id: 13,
+    name: "Mini Project MSIB B3 - Ticket bioskop ",
+    img: "../assets/images/projects/alterra-2-mini-project.jpeg",
+    role: "React Developer",
+    type: "Mini Project MSIB B3",
+    source: "Kampus Merdeka (MSIB Batch 3) Altera academy",
+    github:
+      "https://github.com/marcellandreas/miniproject-alterra-booking-ticket",
+    live: "http://m-tix.surge.sh/",
+    description:
+      "This is an individual project at Alterra Academy, creating an interactive website for online cinema ticket booking, enabling users to enjoy a more convenient and comfortable movie-watching experience.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React.js",
+      "Redux toolkit",
+      "BootStarp",
+      "Rest API",
+    ],
+    team: {
+      size: 1,
+      roles: ["React Developer"],
+    },
+    responsibilities: ["-"],
+    startDate: "2022-10-01",
+    endDate: "2022-11-01",
+    status: "Completed",
+  },
+  {
+    id: 14,
+    name: "Project Assesment - Todos ",
+    img: "../assets/images/projects/alterra-1-todos.png",
+    role: "React Developer",
+    type: "Project Assesment ",
+    source: "Kampus Merdeka (MSIB Batch 3) Altera academy",
+    github: "https://github.com/marcellandreas/Project-Assesment-Todos-Website",
+    live: "",
+    description:
+      "Creating a simple website to perform CRUD operations by implementing it as a to-do list website.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "React.js", "BootStarp"],
+    team: {
+      size: 1,
+      roles: ["React Developer"],
+    },
+    responsibilities: ["-"],
+    startDate: "2022-10-01",
+    endDate: "2022-11-01",
+    status: "Completed",
+  },
+  {
+    id: 15,
+    name: "Mini Bootcamp Progate HTML & CSS – Jawara Movie",
+    img: "../assets/images/projects/progate-projects.jpeg",
+    role: "HTML & CSS ",
+    type: "Capstone Progate",
+    source: "Mini Bootcamp Progate",
+    github:
+      "https://github.com/marcellandreas/Mini-Bootcamp-Progate-HTML-CSS-Jawara-Movie",
+    live: "https://codesandbox.io/live/60ec9189f73",
+    description:
+      "Creating a cinema ticket booking interface using HTML and basic CSS.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    team: {
+      size: 1,
+      roles: ["HTML & CSS "],
+    },
+    responsibilities: ["-"],
+    startDate: "2021-10-01",
+    endDate: "2021-11-01",
+    status: "Completed",
+  },
+  {
+    id: 16,
+    name: "Personal Project – Weather Website",
+    img: "../assets/images/projects/selfProject-1-weather-website.png",
+    role: "-",
+    type: "Personal",
+    source: "Personal Project",
+    github: "https://github.com/marcellandreas/weather-app",
+    live: "-",
+    description:
+      "WeatherNow is a responsive weather app that provides real-time weather updates for any city or country. It displays current temperature, weather conditions, humidity, wind speed, and visibility. Built with a modern UI for a seamless user experience, it offers quick and accurate weather information.",
+    technologies: ["React.js", "Open APi", "JavaScript"],
+    team: {
+      size: 1,
+      roles: ["Front end Developer Website"],
+    },
+    responsibilities: ["-"],
+    startDate: "2021-10-01",
+    endDate: "2021-11-01",
+    status: "Completed",
+  },
+  {
+    id: 17,
+    name: "Personal Project – Streaming Website",
+    img: "../assets/images/projects/selfProject-3-streaming-website.png",
+    role: "-",
+    type: "Personal",
+    source: "Personal Project",
+    github: "https://github.com/marcellandreas/Movie-app-with-tmbd",
+    live: "https://m-film.surge.sh/",
+    description:
+      "Creating a professional website for streaming movies using the `TMDB API`.",
+    technologies: ["React.js", "SASS", "Redux Toolkit", "TMDB API"],
+    team: {
+      size: 1,
+      roles: ["Front End Developer"],
+    },
+    responsibilities: ["-"],
+    startDate: "2021-10-01",
+    endDate: "2021-11-01",
+    status: "Completed",
+  },
+];
+
 export const skills_Data = [
   {
     logo: "logo-html5",
@@ -175,6 +606,59 @@ export const skills_Data = [
   },
 ];
 
+export const skillsData = {
+  skills: [
+    {
+      category: "Programming Languages",
+      list: [
+        { logo: "logo-javascript", name: "JavaScript" },
+        { logo: "logo-python", name: "Python" }, // Menambahkan Python ke kategori ini
+        { logo: "logo-html5", name: "HTML" },
+        { logo: "logo-css3", name: "CSS" },
+        { logo: "file-tray-stacked-outline", name: "SQL" }, // Jika tidak ada logo, bisa dikosongkan
+      ],
+    },
+    {
+      category: "Frameworks & Libraries",
+      list: [
+        { logo: "logo-vue", name: "Vue.js" },
+        { logo: "logo-react", name: "React.js" },
+        { logo: "logo-nodejs", name: "Node.js" }, // Menambahkan Node.js
+        { logo: "logo-next", name: "Next.js" },
+        { logo: "logo-express", name: "Express.js" },
+      ],
+    },
+    {
+      category: "Tools & Platforms",
+      list: [
+        { logo: "logo-github", name: "Git" },
+        { logo: "logo-docker", name: "Docker" },
+        // { logo: "logo-firebase", name: "Firebase" },
+        { logo: "logo-web-component", name: "Webpack" },
+        { logo: "logo-npm", name: "Npm" },
+      ],
+    },
+    {
+      category: "Cloud & DevOps",
+      list: [
+        { logo: "logo-aws", name: "AWS" },
+        // { logo: "logo-azure", name: "Azure" },
+        { logo: "logo-alibaba", name: "Alibaba Cloud" },
+        // { logo: "", name: "CI/CD" },
+        // { logo: "logo-terraform", name: "Terraform" },
+      ],
+    },
+    {
+      category: "Databases",
+      list: [
+        { logo: "", name: "MySQL" },
+        { logo: "", name: "MongoDB" },
+        { logo: "", name: "PostgreSQL" },
+      ],
+    },
+  ],
+};
+
 export const experience_Data = [
   {
     position: "Software Developer Intern",
@@ -211,11 +695,30 @@ export const experience_Data = [
 
 export const education_Data = [
   {
+    degree: "AWS re/Start Batch 10 Participant",
+    institution: "Orbit Future Academy x AWS",
+    date: "Okt 2024- Present",
+    description: [
+      "AWS re/Start from Orbit Academy is a 12-week program designed to help people kickstart their careers in cloud computing using Amazon Web Services (AWS). It covers the basics like cloud computing, security, networking, and Linux, along with professional skills like interview prep and career development. The program prepares participants for the AWS Cloud Practitioner certification, making it a great fit for those looking to start or switch careers in the cloud industry.",
+    ],
+  },
+  {
     degree: "Information System",
     institution: "Bina Sarana Informatika University",
-    date: "August 2020 - Present",
+    date: "August 2020 - August 2024",
     description: [
       "Major in Computer Science with a focus on web development and programming.",
+    ],
+  },
+  {
+    degree: "Full Stack Mevn Kodebisat Scholarship Participant",
+    institution: "Codepolitan X Alibaba Cloud ",
+    date: "Feb – Sep 2024 ",
+    description: [
+      "Master the fundamentals of NextJs, including core concepts and implementation techniques such as Advance React, NextJS Concept, Routing, Styling, Metadata, Middleware, Date Fetching, Next Image, Dynamic Routes, State Management and Deployment.",
+      "Demonstrated strong problem-solving skills by overcoming coding challenges and bugs during NextJs assignments and projects.",
+      "Completed a Session Social Media final project demonstrating proficiency in NextJs and impressing the instructor and peers with a score of 100",
+      "Completed a comprehensive NextJs training course, earning a certificate of completion and gaining a deeper understanding of the framework's capabilities and best practices.  With a score of 82 out of 100",
     ],
   },
   {
@@ -232,33 +735,23 @@ export const education_Data = [
 ];
 
 export const MENU_NAVBAR = [
-  {
-    name: "home",
-  },
-  {
-    name: "about",
-  },
-  {
-    name: "projects",
-  },
-  {
-    name: "contacts",
-  },
+  { name: "home" },
+  { name: "about" },
+  { name: "projects" },
+  { name: "contacts" },
 ];
 
 export const contacts_info = [
-  { logo: "mail-outline", text: "marcellandreas.123@gmail.com" },
-  { logo: "call-outline", text: "+6282141840186" },
-  { logo: "location-outline", text: "Indonesia" },
+  { id: 1, logo: "mail-outline", text: "marcellandreas.123@gmail.com" },
+  { id: 2, logo: "call-outline", text: "+6282141840186" },
+  { id: 3, logo: "location-outline", text: "Indonesia" },
 ];
 
 export const contacts_banner = [
+  { id: 1, logo: "logo-github", link: "https://github.com/marcellandreas" },
   {
-    logo: "logo-github",
-    link: "https://github.com/marcellandreas",
-  },
-  {
+    id: 2,
     logo: "logo-linkedin",
-    link: "https://www.linkedin.com/in/marcell-andreas-samadhani-duha/",
+    link: "https://www.linkedin.com/in/marcell-andreas/",
   },
 ];

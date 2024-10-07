@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import LandingPage from "./pages/LandingPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  MainLayout,
+  Projects,
+  LandingPage,
+  ProjectDetails,
+  NotFound,
+} from "./routers";
 
 function App() {
   const [showAlert, setShowAlert] = useState(true);
@@ -10,7 +17,44 @@ function App() {
   //     setShowAlert(false);
   //   }
   // }, [showAlert]);
-  return <LandingPage />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <LandingPage />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <MainLayout>
+              <Projects />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/projects/:id"
+          element={
+            <MainLayout>
+              <ProjectDetails />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/*"
+          element={
+            <MainLayout>
+              <NotFound />
+            </MainLayout>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

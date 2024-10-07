@@ -38,58 +38,6 @@ body {
   background-color: #4a90e2; /* Ganti dengan warna utama */
 }
 
-.circle {
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 30px rgba(19, 255, 0, 0.8), 0 0 50px rgba(19, 255, 0, 0.6),
-    0 0 70px rgba(19, 255, 0, 0.4);
-}
-
-.trapezoid {
-  height: 100vh;
-  border-right: 300px solid transparent;
-  border-bottom: 100vh solid #202020;
-}
-
-.profile {
-  left: 55%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 1024px) {
-  .circle {
-    left: 50%;
-    top: 35%;
-  }
-  .trapezoid {
-    height: 100vh;
-    border-right: 750px solid transparent;
-    border-bottom: 100vh solid #202020;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .circle {
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -35%);
-  }
-  .trapezoid {
-    height: 100vh;
-    border-right: 550px solid transparent;
-    border-bottom: 100vh solid #202020;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .circle {
-    left: 10%;
-    background-color: rebeccapurple;
-  }
-}
-
 .card-skill {
   transform: translate(-50%, -0%);
 }
