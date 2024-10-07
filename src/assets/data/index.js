@@ -612,10 +612,10 @@ export const skillsData = {
       category: "Programming Languages",
       list: [
         { logo: "logo-javascript", name: "JavaScript" },
-        { logo: "logo-python", name: "Python" }, // Menambahkan Python ke kategori ini
+        { logo: "logo-python", name: "Python" },
         { logo: "logo-html5", name: "HTML" },
         { logo: "logo-css3", name: "CSS" },
-        { logo: "file-tray-stacked-outline", name: "SQL" }, // Jika tidak ada logo, bisa dikosongkan
+        { logo: "file-tray-stacked-outline", name: "SQL" },
       ],
     },
     {
@@ -623,9 +623,9 @@ export const skillsData = {
       list: [
         { logo: "logo-vue", name: "Vue.js" },
         { logo: "logo-react", name: "React.js" },
-        { logo: "logo-nodejs", name: "Node.js" }, // Menambahkan Node.js
-        { logo: "logo-next", name: "Next.js" },
-        { logo: "logo-express", name: "Express.js" },
+        { logo: "logo-nodejs", name: "Node.js" },
+        { logo: "", name: "Next.js" },
+        { logo: "", name: "Express.js" },
       ],
     },
     {
@@ -641,9 +641,9 @@ export const skillsData = {
     {
       category: "Cloud & DevOps",
       list: [
-        { logo: "logo-aws", name: "AWS" },
+        { logo: "", name: "AWS" },
         // { logo: "logo-azure", name: "Azure" },
-        { logo: "logo-alibaba", name: "Alibaba Cloud" },
+        { logo: "", name: "Alibaba Cloud" },
         // { logo: "", name: "CI/CD" },
         // { logo: "logo-terraform", name: "Terraform" },
       ],

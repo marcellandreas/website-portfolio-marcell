@@ -1,27 +1,25 @@
-/* Gaya modal */
 .Modal {
   background: #202020;
   padding: 20px;
   border-radius: 8px;
   color: #fff;
   width: 500px;
-  max-width: 80%; /* Responsif */
-  margin: auto; /* Untuk horizontal center */
-  position: fixed; /* Agar tetap di atas */
-  top: 50%; /* Posisi vertikal */
-  left: 50%; /* Posisi horizontal */
-  transform: translate(-50%, -50%); /* Mentranslasi ke tengah */
+  max-width: 80%;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   outline: none;
-  z-index: 99999; /* Menetapkan z-index yang tinggi */
+  z-index: 99999;
 }
 
-/* Gaya overlay untuk latar belakang */
 .Overlay {
-  background: rgba(0, 0, 0, 0.7); /* Latar belakang gelap dengan transparansi */
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99998; /* Harus lebih rendah dari modal */
+  z-index: 99998;
 }

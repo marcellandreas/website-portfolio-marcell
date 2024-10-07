@@ -1,7 +1,7 @@
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Memindahkan sedikit ke bawah saat masuk */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -12,46 +12,46 @@
 @keyframes eye-icon {
   from {
     opacity: 0;
-    transform: scale(0.5); /* Mula-mula kecil */
+    transform: scale(0.5);
   }
   to {
     opacity: 1;
-    transform: scale(1); /* Menjadi ukuran normal */
+    transform: scale(1);
   }
 }
 
 .projects-container {
-  perspective: 1000px; /* Memberikan kedalaman perspektif */
+  perspective: 1000px;
 }
 
 .project-card {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Transisi halus saat di-hover */
+  transition: transform 0.3s ease;
   will-change: transform;
 }
 
 .project-card:hover {
-  transform: rotateY(15deg); /* Memutar kartu saat di-hover */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Menambah bayangan saat di-hover */
+  transform: rotateY(15deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .project-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Menghindari masalah tampilan belakang */
+  backface-visibility: hidden;
 }
 
 .project-card img {
-  border-radius: 0.5rem; /* Membuat sudut kartu menjadi bulat */
+  border-radius: 0.5rem;
 }
 
 /* Animasi */
 .animate-fade-in {
-  animation: fade-in 0.5s ease forwards; /* Fade-in saat muncul */
+  animation: fade-in 0.5s ease forwards;
 }
 
 .animate-eye-icon {
-  animation: eye-icon 0.5s ease forwards; /* Animasi untuk ikon mata */
+  animation: eye-icon 0.5s ease forwards;
 }

@@ -23,9 +23,7 @@ body {
     transform: rotate(20deg);
   }
   to {
-    transform: rotate(
-      360deg
-    ); /* Rotasi akhir 360 derajat (satu putaran penuh) */
+    transform: rotate(360deg);
   }
 }
 
@@ -35,7 +33,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  background-color: #4a90e2; /* Ganti dengan warna utama */
+  background-color: #4a90e2;
 }
 
 .card-skill {

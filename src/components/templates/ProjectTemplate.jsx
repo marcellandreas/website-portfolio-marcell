@@ -4,9 +4,8 @@ import { experience_projects } from "../../assets/data";
 import "../../assets/style/Project.css";
 
 export const ProjectTemplate = () => {
-  const [visibleProjects, setVisibleProjects] = useState(5); // Default ke 5 proyek
+  const [visibleProjects, setVisibleProjects] = useState(5);
 
-  // Hook untuk mengupdate jumlah proyek yang ditampilkan berdasarkan ukuran layar
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
