@@ -10,7 +10,12 @@ export const BannerTemplate = () => {
         {/* Trapesium dan Profile untuk Desktop */}
         <div className="hidden md:block w-[420px] h-[420px] md:w-[480px] md:h-[480px] absolute rounded-full border-8 shadow-sm border-primary-100 circle animate-pulse" />
         <div className="hidden md:block absolute h-screen w-full lg:w-[410px] z-10 profile">
-          <img src={img} alt="profile" className="w-full h-full" />
+          <img
+            src={img}
+            loading="lazy"
+            alt="profile"
+            className="w-full h-full"
+          />
         </div>
 
         {/* Teks untuk Desktop */}
@@ -53,6 +58,7 @@ export const BannerTemplate = () => {
             <div className="flex rounded-xl">
               <img
                 src={img}
+                loading="lazy"
                 alt="profile"
                 className="w-40 h-40 rounded-xl border-4 border-primary-100"
               />

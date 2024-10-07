@@ -42,6 +42,7 @@ export const ProjectDetails = () => {
         {/* Project Image */}
         <div className="project-image">
           <img
+            loading="lazy"
             src={project.img}
             alt={project.name}
             className="w-full h-auto    md:min-w-[500px] rounded-lg shadow-lg object-cover transition-transform duration-500 hover:scale-105"

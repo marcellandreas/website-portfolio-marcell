@@ -47,6 +47,7 @@ export function Projects() {
                   <img
                     src={project.img}
                     alt={project.name}
+                    loading="lazy"
                     className="w-full h-48 object-cover transition-opacity duration-500 ease-in-out"
                   />
                   <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 ease-in-out flex items-center justify-center">

@@ -11,21 +11,23 @@ export const ProjectTemplate = () => {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width < 768) {
-        // Ukuran mobile
         setVisibleProjects(3);
       } else {
-        setVisibleProjects(5); // Ukuran desktop
+        setVisibleProjects(5);
       }
     };
 
-    // Atur event listener untuk resize
-    window.addEventListener("resize", handleResize);
+    // Debounce Resize
+    let resizeTimeout;
+    const debounceResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(handleResize, 150);
+    };
 
-    // Panggil fungsi saat pertama kali komponen dirender
+    window.addEventListener("resize", debounceResize);
     handleResize();
 
-    // Hapus event listener saat komponen tidak digunakan
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", debounceResize);
   }, []);
 
   const displayedProjects = experience_projects.slice(0, visibleProjects);
@@ -49,6 +51,7 @@ export const ProjectTemplate = () => {
                 <img
                   src={project.img}
                   alt={project.name}
+                  loading="lazy"
                   className="w-full h-48 object-cover transition-opacity duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 ease-in-out flex items-center justify-center">
