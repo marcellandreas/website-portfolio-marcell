@@ -11,6 +11,7 @@ const formatDate = (dateString) => {
 
 export const ProjectDetails = () => {
   const { id } = useParams(); // Mengambil ID dari URL
+
   const project = experience_projects.find((proj) => proj.id === parseInt(id));
 
   if (!project) {

@@ -24,13 +24,18 @@ export const AboutTemplate = () => {
 
       {/* Section Content */}
       <SectionContent>
-        Fresh graduate of Information Systems with a specialization in software
-        development. Enthusiastic about learning new things and detail-oriented,
-        with strong knowledge in Python and JavaScript and experience using
-        React JS and Node.js. Understanding the principles of software design,
-        web application development, and database management. Actively improving
-        skills through personal projects and courses, aiming to create
-        innovative and effective software solutions.
+        I am a fresh graduate with a degree in Information Systems from Bina
+        Sarana Informatika University, with a career interest in Front-end
+        development. My technical skills include React.js, Next.js, and Vue.js.
+        I have participated in the Kodebisat program from Codepolitan, focusing
+        on Full Stack MEVN, and I have completed several web application
+        projects utilizing MEVN. Additionally, I pursued self-education at
+        Altera Academy, concentrating on Front-end Development and contributing
+        to various collaborative projects. My internship experience as a
+        software developer at Bantex Indonesia has helped me hone my
+        problem-solving and communication skills. I am committed to continuously
+        developing my web development skills and aspire to apply them with
+        creativity and professionalism in the workplace.
       </SectionContent>
 
       {/* Background Effects */}

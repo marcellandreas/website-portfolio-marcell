@@ -63,7 +63,7 @@ export const experience_projects = [
     },
     responsibilities: ["-"],
     startDate: "2023-03-01",
-    endDate: "2023-03-15",
+    endDate: "2024-10-23",
     status: "Completed",
   },
   {
@@ -128,8 +128,8 @@ export const experience_projects = [
       "Membangun dan mengimplementasikan proyek menggunakan Vue CLI.",
       "Mengintegrasikan VueRouter untuk manajemen rute dalam aplikasi.",
     ],
-    startDate: "2023-07-01",
-    endDate: "2023-08-01",
+    startDate: "2024-08-01",
+    endDate: "2024-09-01",
     status: "Completed",
   },
   {
@@ -154,8 +154,8 @@ export const experience_projects = [
       "Implementasi Router: Menggunakan Vue Router untuk mengatur navigasi dalam aplikasi web yang dibangun.",
       "Praktik Langsung: Melakukan latihan dan proyek yang memungkinkan penerapan pengetahuan yang diperoleh selama kelas.",
     ],
-    startDate: "2023-07-01",
-    endDate: "2023-08-01",
+    startDate: "2024-08-01",
+    endDate: "2024-09-01",
     status: "Completed",
   },
   {
@@ -180,8 +180,8 @@ export const experience_projects = [
       "Implementasi Router: Menggunakan Vue Router untuk mengatur navigasi dalam aplikasi web yang dibangun.",
       "Praktik Langsung: Melakukan latihan dan proyek yang memungkinkan penerapan pengetahuan yang diperoleh selama kelas.",
     ],
-    startDate: "2023-07-01",
-    endDate: "2023-08-01",
+    startDate: "2024-08-01",
+    endDate: "2024-09-01",
     status: "Completed",
   },
   {
@@ -200,8 +200,8 @@ export const experience_projects = [
       roles: ["Full Stack Mevn"],
     },
     responsibilities: ["-"],
-    startDate: "2023-07-01",
-    endDate: "2023-08-01",
+    startDate: "2024-08-01",
+    endDate: "2024-09-01",
     status: "Completed",
   },
   {
@@ -211,7 +211,8 @@ export const experience_projects = [
     role: "React Developer",
     type: "Submission Dicoding",
     source: "Dicoding Academy",
-    github: "",
+    github:
+      "https://github.com/marcellandreas/Submission-Dasar-Pemrograman-Web-2",
     live: "",
     description:
       "Submission: tugas akhir membuat halaman website menggunakan teknik semantic HTML dan layouting",
@@ -225,8 +226,8 @@ export const experience_projects = [
       "Interaktivitas: Mengimplementasikan fungsionalitas menggunakan JavaScript Vanilla untuk meningkatkan pengalaman pengguna.",
       "Kepatuhan Standar: Memastikan website sesuai dengan standar web dan responsif di berbagai perangkat.",
     ],
-    startDate: "2023-07-01",
-    endDate: "2023-08-01",
+    startDate: "2023-01-28",
+    endDate: "2023-01-28",
     status: "Completed",
   },
   {
@@ -236,7 +237,8 @@ export const experience_projects = [
     role: "React Developer",
     type: "Submission Dicoding",
     source: "Dicoding Academy",
-    github: "",
+    github:
+      "https://github.com/marcellandreas/Submission-Front-End-Web-untuk-Pemula",
     live: "",
     description:
       "Kelas ini melatih Front-End Web Developer dalam membangun aplikasi web interaktif menggunakan HTML5, CSS3, dan JavaScript. Proyek akhir mencakup pembuatan website yang menampilkan informasi, memiliki interaktivitas, dan menggunakan Web Storage untuk penyimpanan data. Total waktu penyelesaian proyek adalah 45 jam.",
@@ -255,8 +257,8 @@ export const experience_projects = [
       "Waktu Manajemen: Mengatur waktu untuk menyelesaikan modul.",
       "Evaluasi Pembelajaran: Menilai pemahaman dan keterampilan yang diperoleh.",
     ],
-    startDate: "2023-07-01",
-    endDate: "2023-08-01",
+    startDate: "2024-02-01",
+    endDate: "2024-02-01",
     status: "Completed",
   },
   {
@@ -289,7 +291,7 @@ export const experience_projects = [
   },
   {
     id: 12,
-    name: "Aplikasi Pembayaran Online “My Cuan” ",
+    name: "MyCuan",
     img: "../assets/images/projects/alterra-3-capstone.jpeg",
     role: "React Developer",
     type: "Capstone Project MSIB B3",

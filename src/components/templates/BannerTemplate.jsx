@@ -24,9 +24,11 @@ export const BannerTemplate = () => {
             Marcell Andreas S. Duha
           </Title>
           <div className="flex flex-col gap-2 md:gap-4">
-            <Title level={4}>Software Developer</Title>
+            <Title level={4}>Entry Level Front end</Title>
             <p className="text-primary-500 text-md md:text-base lg:text-lg pr-24">
-              Software developer focused on building impactful applications.
+              I am committed to continuously developing my web development
+              skills and aspire to apply them with creativity and
+              professionalism in the workplace.
             </p>
             <ButtonDownloadResume
               href="/assets/resume-marcell-andreas-samadhani-duha.pdf"

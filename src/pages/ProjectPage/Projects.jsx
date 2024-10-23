@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { experience_projects } from "../../assets/data";
+import { CardProject } from "../../components/molecules/Card/CardProject";
 
 export function Projects() {
   const [searchQuery, setSearchQuery] = useState("");
 
   // Filter projects based on search query
-  const filteredProjects = experience_projects.filter((project) =>
+  const sortedProjects = [...experience_projects].sort((a, b) => {
+    const dateA = new Date(a.endDate);
+    const dateB = new Date(b.endDate);
+    return dateB.getTime() - dateA.getTime(); // Urutan descending, terbaru di atas
+  });
+  const filteredProjects = sortedProjects.filter((project) =>
     project.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -35,35 +41,14 @@ export function Projects() {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 perspective">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <article
+            <CardProject
               key={project.id}
-              className="project-card relative bg-primary-300 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:rotate-y-15"
-            >
-              <Link
-                to={`/projects/${project.id}`}
-                aria-label={`View project ${project.name}`}
-              >
-                <div className="project-inner">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    loading="lazy"
-                    className="w-full h-48 object-cover transition-opacity duration-500 ease-in-out"
-                  />
-                  <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity duration-300 ease-in-out flex items-center justify-center">
-                    <p className="text-white">Click to details</p>
-                  </div>
-
-                  <div className="p-4">
-                    <h2 className="text-xl font-semibold text-primary-100">
-                      {project.name}
-                    </h2>
-                    <p className="text-gray-400">{project.role}</p>
-                    <p className="text-sm text-gray-500">{project.type}</p>
-                  </div>
-                </div>
-              </Link>
-            </article>
+              id={project.id}
+              name={project.name}
+              img={project.img}
+              technologies={project.technologies}
+              type={project.type}
+            />
           ))
         ) : (
           <div className="col-span-1  overflow-hidden md:col-span-2 lg:col-span-3 text-center py-20 relative">
