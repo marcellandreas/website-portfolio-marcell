@@ -28,7 +28,7 @@ export function Footer() {
         </ul>
       </nav>
 
-      <div className="mb-4 text-center">
+      {/* <div className="mb-4 text-center">
         {socialLinks.map((social, index) => (
           <React.Fragment key={social.href}>
             <a
@@ -43,7 +43,7 @@ export function Footer() {
             )}
           </React.Fragment>
         ))}
-      </div>
+      </div> */}
 
       <div className="text-center text-gray-400">
         <p className="text-sm">

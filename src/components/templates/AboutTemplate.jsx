@@ -13,7 +13,7 @@ export const AboutTemplate = () => {
   return (
     <section
       id="about"
-      className="relative flex flex-col justify-center items-center py-10 px-4 md:px-8 lg:px-16 gap-14 bg-primary-300 text-gray-100 overflow-hidden min-h-screen"
+      className="relative flex flex-col justify-center items-center py-16 px-4 md:px-8 lg:px-16 gap-14 bg-primary-300 text-gray-100 overflow-hidden min-h-screen"
     >
       {/* Section Title */}
       <SectionTitle
