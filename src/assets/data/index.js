@@ -429,6 +429,33 @@ export const experience_projects = [
     endDate: "2021-11-01",
     status: "Completed",
   },
+  {
+    id: 18,
+    name: "Little Learners - School Website Template",
+    img: "../assets/images/projects/liitle_learner.png",
+    role: "-",
+    type: "Personal",
+    source: "Personal Project",
+    github: "https://github.com/marcellandreas/little_learners",
+    live: "",
+    description:
+      "Little Learners is your ultimate school website template, designed to create an engaging and informative online platform for educational institutions. It's the key to enhancing the online presence of your school.",
+    technologies: [
+      "React.js",
+      "Tailwind",
+      "Swiper",
+      "React Router Dom",
+      "Heroicons",
+    ],
+    team: {
+      size: 1,
+      roles: ["Front End Developer"],
+    },
+    responsibilities: ["-"],
+    startDate: "2025-05-18",
+    endDate: "2025-05-21",
+    status: "Completed",
+  },
 ];
 
 export const skillsData = {
