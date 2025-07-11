@@ -1,53 +1,32 @@
-import { useEffect } from "react";
-import Aos from "aos";
-
-import { PointNine } from "../../routers";
-import { SectionTitle } from "../molecules/SectionTitle";
-import { SectionContent } from "../molecules/SectionContent";
+import { Title } from "../../routers";
+import { ButtonDownloadResume } from "../atoms/Button";
 
 export const AboutTemplate = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   return (
-    <section
-      id="about"
-      className="relative flex flex-col justify-center items-center py-16 px-4 md:px-8 lg:px-16 gap-14 bg-primary-300 text-gray-100 overflow-hidden min-h-screen"
-    >
-      {/* Section Title */}
-      <SectionTitle
-        headingText="About"
-        highlightText="Us"
-        paragraphText="Learn more about our journey, values, and mission."
-      />
-
-      {/* Section Content */}
-      <SectionContent>
-        I am a fresh graduate with a degree in Information Systems from Bina
-        Sarana Informatika University, with a career interest in Front-end
-        development. My technical skills include React.js, Next.js, and Vue.js.
-        I have participated in the Kodebisat program from Codepolitan, focusing
-        on Full Stack MEVN, and I have completed several web application
-        projects utilizing MEVN. Additionally, I pursued self-education at
-        Altera Academy, concentrating on Front-end Development and contributing
-        to various collaborative projects. My internship experience as a
-        software developer at Bantex Indonesia has helped me hone my
-        problem-solving and communication skills. I am committed to continuously
-        developing my web development skills and aspire to apply them with
-        creativity and professionalism in the workplace.
-      </SectionContent>
-
-      {/* Background Effects */}
-      <div className="absolute hidden md:block top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-10 w-48 h-48 bg-primary-100 opacity-20 rounded-full animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-36 h-36 bg-primary-200 opacity-30 rounded-full animate-pulse" />
+    <div className="flex flex-col w-full ">
+      <Title level={2} className="text-primary-100 mb-2">
+        Hello
+      </Title>
+      <p className="text-lg md:text-xl font-semibold mb-4 text-white">
+        Here's who I am & what I do
+      </p>
+      <div>
+        <ButtonDownloadResume
+          href="/assets/FE-CV-Marcell-ENG.pdf"
+          icon="cloud-download-outline"
+        >
+          Resume
+        </ButtonDownloadResume>
       </div>
-
-      {/* Decorative Element */}
-      <div className="absolute left-0 bottom-0 transform -translate-x-[20%] translate-y-[10%] lg:-translate-x-[10%] lg:translate-y-[20%]">
-        <PointNine />
-      </div>
-    </section>
+      <p className="text-primary-400 text-sm md:text-base mb-6 pt-5">
+        I am a frontend web developer with a strong interest in technological
+        advancements. My focus is on fullstack web development using JavaScript,
+        particularly on the frontend side. I have good time management skills, a
+        passion for continuous learning, and a structured approach to work.
+        Currently, I am actively developing my skills as a Front End Developer
+        and committed to growing into a competent Software Engineer who can
+        contribute effectively to various cross-disciplinary projects.
+      </p>
+    </div>
   );
 };

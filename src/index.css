@@ -44,15 +44,21 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track {
   @apply bg-gray-900;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #20bf55;
-  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  background-color: #13ff00; /* fallback */
+  background-image: linear-gradient(
+    315deg,
+    #13ff00 0%,
+    #3f3f3f 50%,
+    #161616 100%
+  );
+  border-radius: 8px;
 }
 
 .card-project {

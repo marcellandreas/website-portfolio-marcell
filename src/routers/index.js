@@ -26,7 +26,6 @@ export { ContactInfo } from "../components/organisms/ContactInfo";
 export { MainLayout } from "../components/templates/MainLayout";
 export { AboutTemplate } from "../components/templates/AboutTemplate";
 export { BannerTemplate } from "../components/templates/BannerTemplate";
-export { ContactTemplate } from "../components/templates/ContactTemplate";
 export { MyTimeLineTemplate } from "../components/templates/MyTimeLineTemplate";
 export { ProjectTemplate } from "../components/templates/ProjectTemplate";
 export { SkillTemplate } from "../components/templates/SkillTemplate";

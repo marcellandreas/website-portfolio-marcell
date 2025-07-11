@@ -1,15 +1,8 @@
-import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-import {
-  AboutTemplate,
-  BannerTemplate,
-  MyTimeLineTemplate,
-  SkillTemplate,
-  ProjectTemplate,
-  ContactTemplate,
-} from "../routers/index";
+import { BannerTemplate } from "../routers/index";
 
 export const LandingPage = () => {
   useEffect(() => {
@@ -18,11 +11,6 @@ export const LandingPage = () => {
   return (
     <section className="bg-primary-200 text-white flex flex-col gap-2">
       <BannerTemplate />
-      <AboutTemplate />
-      <SkillTemplate />
-      <MyTimeLineTemplate />
-      <ProjectTemplate />
-      <ContactTemplate />
     </section>
   );
 };

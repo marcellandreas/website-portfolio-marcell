@@ -464,6 +464,7 @@ export const skillsData = {
       category: "Programming Languages",
       list: [
         { logo: "logo-javascript", name: "JavaScript" },
+        { logo: "logo-typescript", name: "TypeScript" },
         { logo: "logo-python", name: "Python" },
         { logo: "logo-html5", name: "HTML" },
         { logo: "logo-css3", name: "CSS" },
@@ -481,29 +482,25 @@ export const skillsData = {
       ],
     },
     {
-      category: "Tools & Platforms",
+      category: "Styling",
       list: [
-        { logo: "logo-github", name: "Git" },
-        { logo: "logo-docker", name: "Docker" },
-        { logo: "logo-web-component", name: "Webpack" },
-        { logo: "logo-npm", name: "Npm" },
+        { logo: "", name: "Tailwind CSS" },
+        { logo: "", name: "Bootstrap" },
+        { logo: "", name: "MUI" },
+        { logo: "", name: "Sass" },
       ],
     },
     {
-      category: "Cloud & DevOps",
+      category: "Tools",
       list: [
-        { logo: "", name: "AWS" },
-        { logo: "", name: "Alibaba Cloud" },
-        { logo: "", name: "CI/CD" },
+        { logo: "", name: "VSCode" },
+        { logo: "", name: "Figma" },
+        { logo: "", name: "Docker" },
       ],
     },
     {
-      category: "Databases",
-      list: [
-        { logo: "", name: "MySQL" },
-        { logo: "", name: "MongoDB" },
-        { logo: "", name: "PostgreSQL" },
-      ],
+      category: "Cloud",
+      list: [{ logo: "", name: "AWS Cloud (re/Start Academy)" }],
     },
   ],
 };
@@ -584,10 +581,10 @@ export const education_Data = [
 ];
 
 export const MENU_NAVBAR = [
-  { name: "home" },
-  { name: "about" },
-  { name: "projects" },
-  { name: "contacts" },
+  { name: "home", icon: "home-outline", path: "/" },
+  { name: "about", icon: "person-outline", path: "about" },
+  { name: "projects", icon: "code-outline", path: "projects" },
+  { name: "contact", icon: "call-outline", path: "contact" },
 ];
 
 export const contacts_info = [

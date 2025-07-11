@@ -20,14 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              <LandingPage />
-            </MainLayout>
-          }
-        />
+        <Route path="/" element={<LandingPage />} />
         <Route
           path="/projects"
           element={
