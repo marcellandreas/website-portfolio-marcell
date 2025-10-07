@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export const Logo = () => {
   return (
-    <div className="flex items-center">
+    <Link to={"/"} className="flex items-center cursor-pointer">
       <img
         src="./icon.png"
         alt="Logo"
@@ -11,6 +13,6 @@ export const Logo = () => {
         Marcell
         <span className=" text-primary-100">Andreas</span>
       </span>
-    </div>
+    </Link>
   );
 };
