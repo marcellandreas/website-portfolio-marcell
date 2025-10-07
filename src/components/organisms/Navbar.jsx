@@ -3,18 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Logo } from "../atoms/Logo";
 import { MenuToggle } from "../molecules/MenuToggle";
 import { NavLinks } from "../molecules/NavLink";
-
-export const MENU_NAVBAR = [
-  { name: "home", icon: "home-outline", path: "home", isSection: true },
-  { name: "about", icon: "person-outline", path: "about", isSection: true },
-  {
-    name: "projects",
-    icon: "code-outline",
-    path: "/projects",
-    isSection: false,
-  },
-  { name: "contact", icon: "call-outline", path: "contact", isSection: true },
-];
+import { MENU_NAVBAR } from "../../assets/data/NavbarLink.mock";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

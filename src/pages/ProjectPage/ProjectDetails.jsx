@@ -1,6 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom"; // Jika menggunakan React Router
-import { experience_projects } from "../../assets/data"; // Pastikan path ini sesuai
+import { useParams } from "react-router-dom"; 
+import { experience_projects } from "../../assets/data"; 
 import { NotFound } from "../errors/404";
 
 // Fungsi untuk format tanggal
@@ -10,7 +10,7 @@ const formatDate = (dateString) => {
 };
 
 export const ProjectDetails = () => {
-  const { id } = useParams(); // Mengambil ID dari URL
+  const { id } = useParams(); 
 
   const project = experience_projects.find((proj) => proj.id === parseInt(id));
 

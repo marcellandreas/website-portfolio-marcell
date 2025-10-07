@@ -18,7 +18,7 @@ const Title = ({ level, children, className }) => {
 };
 
 const Heading = ({ text, highlight }) => (
-  <h1 className="text-4xl md:text-5xl font-semibold">
+  <h1 className="text-xl md:text-2xl font-semibold">
     {text} <span className="text-primary-100">{highlight}</span>
   </h1>
 );

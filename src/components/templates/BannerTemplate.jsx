@@ -2,7 +2,7 @@ import { OrbitControls, Sparkles } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
 import { Link } from "react-router-dom";
-import { contactData } from "../../assets/data/ContactData";
+import { contactData } from "../../assets/data/ContactData.mock";
 import img from "../../assets/images/marcell.png";
 import { ButtonDownloadResume } from "../atoms/Button";
 import { Title } from "../atoms/Typography";
@@ -27,7 +27,7 @@ export const BannerTemplate = () => {
 
   const tabList = [
     { id: "about", label: "Who I Am" },
-    { id: "timeline", label: "My Timeline" },
+    { id: "timeline", label: "Resume" },
     { id: "projects", label: "Projects" },
     { id: "skill", label: "Skills" },
   ];
@@ -36,7 +36,7 @@ export const BannerTemplate = () => {
     switch (activeTab) {
       case "about":
         return (
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full p-10">
             <Title level={2} className="text-primary-100 mb-2">
               Hello
             </Title>
@@ -67,7 +67,7 @@ export const BannerTemplate = () => {
         return <MyTimeLineTemplate openModal={openModal} />;
       case "projects":
         return (
-          <div className="flex flex-col items-center text-white gap-4">
+          <div className="flex flex-col items-center text-white gap-4 p-10">
             <p className="text-lg">💼 Explore my project showcase</p>
             <Link
               to="/projects"
@@ -86,7 +86,7 @@ export const BannerTemplate = () => {
 
   return (
     <div id="home" className="relative">
-      <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500 overflow-hidden px-4 md:px-10">
+      <section className="relative w-full min-h-screen max-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500  px-4 md:px-10">
         {/* 3D Background */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
@@ -134,7 +134,7 @@ export const BannerTemplate = () => {
             <Card>
               <CardContent className="p-0">
                 <div className="w-full sm:w-64 md:w-[360px] md:h-[480px] rounded-2xl overflow-hidden ring-4 ring-primary-200 flex flex-col items-center mx-auto">
-                  <div className="h-60 p-10 w-60 flex items-center justify-center">
+                  <div className="md:h-60 h-[180px] w-[180px] p-10 md:w-60 flex items-center justify-center">
                     <img
                       src={img}
                       alt="profile"
@@ -175,15 +175,16 @@ export const BannerTemplate = () => {
           {/* Right - Tabs & Content */}
           <div className="flex-1 w-full overflow-hidden">
             {/* Tabs */}
-            <div className="flex flex-wrap gap-2 overflow-x-auto pb-2">
+            {/* Desktop Tabs */}
+            <div className="hidden sm:flex gap-0.5 overflow-x-auto ">
               {tabList.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-t-xl font-semibold transition ${
                     activeTab === tab.id
-                      ? "bg-white text-primary-700"
-                      : "bg-primary-400 text-white hover:bg-primary-100"
+                      ? "bg-primary-300 text-primary-700"
+                      : "bg-primary-200 text-white hover:bg-primary-100"
                   }`}
                 >
                   {tab.label}
@@ -191,8 +192,27 @@ export const BannerTemplate = () => {
               ))}
             </div>
 
+            {/* Mobile Dropdown */}
+            {/* Bottom Navigation Tabs for Mobile */}
+            <div className="sm:hidden fixed bottom-0 left-0 right-0 bg-primary-200 text-white shadow-md flex  justify-around items-center h-14 z-50">
+              {tabList.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`flex flex-col items-center text-xs ${
+                    activeTab === tab.id
+                      ? "text-white font-semibold"
+                      : "text-white/70"
+                  }`}
+                >
+                  {/* Optional: You can add icons here */}
+                  <span>{tab.label}</span>
+                </button>
+              ))}
+            </div>
+
             {/* Tab Content */}
-            <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl p-6 shadow-2xl max-h-[480px]  overflow-y-auto scrollbar-thin scrollbar-thumb-primary-300">
+            <div className="bg-white/10 backdrop-blur-md border border-white/30 rounded-e-xl rounded-b-xl shadow-2xl max-h-[480px] h-[480px]  overflow-y-auto scrollbar-thin scrollbar-thumb-primary-300 p-4 mb-10 md:-mb-0">
               {renderContent()}
             </div>
           </div>

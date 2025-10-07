@@ -1,4 +1,4 @@
-import { MENU_NAVBAR } from "../../assets/data";
+import { MENU_NAVBAR } from "../../assets/data/NavbarLink.mock";
 
 export const NavLinks = ({ isMobile, onClick }) => (
   <nav
