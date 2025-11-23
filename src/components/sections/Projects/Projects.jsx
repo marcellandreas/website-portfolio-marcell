@@ -3,19 +3,9 @@ import { Link } from 'react-router-dom';
 import { SectionContainer, SectionHeader } from '../SectionContainer/SectionContainer';
 import { ProjectCard } from './ProjectCard';
 import { Button } from '../../common/Button/Button';
+import { PROJECTS_DATA } from '../../../assets/data/PROJECTS.MOCK.JSX';
 
-// Mock data - replace with actual data
-const PROJECTS = [
-  {
-    id: 1,
-    name: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce platform with payment integration',
-    img: '/assets/projects/project1.jpg',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    type: 'Web Application'
-  },
-  // Add more projects...
-];
+
 
 const PROJECT_FILTERS = ['All', 'Web Application', 'Mobile App', 'API'];
 
@@ -24,8 +14,8 @@ export const Projects = () => {
   const [visibleCount, setVisibleCount] = useState(6);
 
   const filteredProjects = filter === 'All' 
-    ? PROJECTS 
-    : PROJECTS.filter(p => p.type === filter);
+    ? PROJECTS_DATA 
+    : PROJECTS_DATA.filter(p => p.type === filter);
 
   const displayedProjects = filteredProjects.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProjects.length;

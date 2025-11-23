@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Heading } from '../Typography/Typography';
 
 export const Modal = ({ 
   isOpen, 

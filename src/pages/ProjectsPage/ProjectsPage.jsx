@@ -4,21 +4,23 @@ import { SectionContainer, SectionHeader } from '../../components/sections/Secti
 import { ProjectCard } from '../../components/sections/Projects/ProjectCard';
 import { Input } from '../../components/common/Form/FormFields';
 import { Button } from '../../components/common/Button/Button';
+import { experience_projects } from '../../assets/data';
+import { Heading, Text } from '../../components/common/Typography/Typography';
+import { PROJECTS_DATA } from '../../assets/data/PROJECTS.MOCK.JSX';
 
-// Mock data - replace with actual data
-const ALL_PROJECTS = [
-  // ... your projects data
-];
+
 
 const PROJECT_CATEGORIES = ['All', 'Web Application', 'Mobile App', 'API', 'UI/UX'];
 
 export const ProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [filteredProjects, setFilteredProjects] = useState(ALL_PROJECTS);
+  const [filteredProjects, setFilteredProjects] = useState(PROJECTS_DATA);
+
+  console.log('Experience Projects:', PROJECTS_DATA);
 
   useEffect(() => {
-    let filtered = ALL_PROJECTS;
+    let filtered = PROJECTS_DATA;
 
     // Filter by category
     if (selectedCategory !== 'All') {
@@ -87,10 +89,13 @@ export const ProjectsPage = () => {
         {filteredProjects.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project, index) => (
-              <div key={project.id} data-aos="fade-up" data-aos-delay={index * 50}>
+              <div key={project.id}  >
                 <ProjectCard project={project} />
               </div>
             ))}
+            <div>
+              a
+            </div>
           </div>
         ) : (
           <div className="text-center py-20">

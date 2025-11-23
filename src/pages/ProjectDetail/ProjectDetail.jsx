@@ -3,42 +3,13 @@ import { SectionContainer } from '../../components/sections/SectionContainer/Sec
 import { Card, CardBody } from '../../components/common/Card/Card';
 import { Heading, Text, Badge } from '../../components/common/Typography/Typography';
 import { Button, IconButton } from '../../components/common/Button/Button';
+import { PROJECTS_DATA } from '../../assets/data/PROJECTS.MOCK.JSX';
 
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Mock data - replace with actual data fetching
-  const project = {
-    id: 1,
-    name: 'E-Commerce Platform',
-    description: 'A full-featured e-commerce platform with payment integration, user authentication, and admin dashboard.',
-    img: '/assets/projects/project1.jpg',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-    type: 'Web Application',
-    role: 'Full Stack Developer',
-    duration: '3 months',
-    team: '4 members',
-    github: 'https://github.com/yourusername/project',
-    live: 'https://project-demo.com',
-    features: [
-      'User authentication and authorization',
-      'Product catalog with search and filters',
-      'Shopping cart and checkout process',
-      'Payment integration with Stripe',
-      'Order tracking system',
-      'Admin dashboard for inventory management'
-    ],
-    challenges: [
-      'Implementing secure payment processing',
-      'Optimizing database queries for large product catalogs',
-      'Creating responsive design for mobile devices'
-    ],
-    screenshots: [
-      '/assets/projects/screenshot1.jpg',
-      '/assets/projects/screenshot2.jpg'
-    ]
-  };
+  const project = PROJECTS_DATA.find(proj => proj.id === parseInt(id));
 
   if (!project) {
     return (
