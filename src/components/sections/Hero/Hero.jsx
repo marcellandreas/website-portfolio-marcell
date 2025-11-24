@@ -55,7 +55,7 @@ export const Hero = () => {
             <IconButton
               icon="cloud-download-outline"
               label="Download Resume"
-              href="/assets/FE-CV-Marcell-ENG.pdf"
+              href="/CV_marcell andreas samadhani duha.pdf"
             />
             <a 
               href="#contact"
