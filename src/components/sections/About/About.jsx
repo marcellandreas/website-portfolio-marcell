@@ -4,7 +4,7 @@ import { Heading, Text } from '../../common/Typography/Typography';
 import { IconButton } from '../../common/Button/Button';
 
 const STATS = [
-  { value: '2+', label: 'Years Experience' },
+  { value: '1', label: 'Years Experience' },
   { value: '15+', label: 'Projects Completed' },
   { value: '100%', label: 'Client Satisfaction' }
 ];
