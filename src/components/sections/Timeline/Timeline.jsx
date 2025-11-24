@@ -3,26 +3,13 @@ import { SectionContainer, SectionHeader } from '../SectionContainer/SectionCont
 import { Card, CardBody } from '../../common/Card/Card';
 import { Heading, Text, Badge } from '../../common/Typography/Typography';
 import { Modal } from '../../common/Modal/Modal';
+import { ExperienceData } from '../../../assets/data/Experience.mock';
+import { EducationData, EducationNonFormalData } from '../../../assets/data/Education.mock';
 
 const TIMELINE_DATA = {
-  experience: [
-    {
-      position: 'Frontend Developer',
-      company: 'Company Name',
-      date: 'Jan 2023 - Present',
-      description: ['Built responsive web applications', 'Collaborated with design team'],
-      type: 'work'
-    }
-  ],
-  education: [
-    {
-      degree: 'Bachelor of Information Systems',
-      institution: 'University Name',
-      date: '2019 - 2023',
-      description: ['GPA: 3.8/4.0', 'Dean\'s List'],
-      type: 'education'
-    }
-  ]
+  experience: ExperienceData,
+  education: EducationData,
+  educationNonFormal: EducationNonFormalData
 };
 
 const TimelineItem = ({ item, onClick }) => (
@@ -101,6 +88,18 @@ export const Timeline = () => {
             `}
           >
             Education
+          </button>
+          <button
+            onClick={() => setActiveTab('educationNonFormal')}
+            className={`
+              px-6 py-3 rounded-lg font-semibold transition-all duration-300
+              ${activeTab === 'educationNonFormal' 
+                ? 'bg-primary-100 text-black' 
+                : 'text-white hover:text-primary-100'
+              }
+            `}
+          >
+            Education Non Formal
           </button>
         </div>
       </div>

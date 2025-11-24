@@ -1,18 +1,23 @@
 export const EducationData = [
-  {
-    degree: "AWS re/Start Batch 10 Participant",
-    institution: "Orbit Future Academy x AWS",
-    date: "Okt 2024- Des 2024",
-    description: [
-      "AWS re/Start from Orbit Academy is a 12-week program designed to help people kickstart their careers in cloud computing using Amazon Web Services (AWS). It covers the basics like cloud computing, security, networking, and Linux, along with professional skills like interview prep and career development. The program prepares participants for the AWS Cloud Practitioner certification, making it a great fit for those looking to start or switch careers in the cloud industry.",
-    ],
-  },
+
   {
     degree: "Information System",
     institution: "Bina Sarana Informatika University",
     date: "August 2020 - August 2024",
     description: [
       "Major in Computer Science with a focus on web development and programming.",
+    ],
+  },
+  
+];
+
+export const EducationNonFormalData = [
+  {
+    degree: "AWS re/Start Batch 10 Participant",
+    institution: "Orbit Future Academy x AWS",
+    date: "Okt 2024- Des 2024",
+    description: [
+      "AWS re/Start from Orbit Academy is a 12-week program designed to help people kickstart their careers in cloud computing using Amazon Web Services (AWS). It covers the basics like cloud computing, security, networking, and Linux, along with professional skills like interview prep and career development. The program prepares participants for the AWS Cloud Practitioner certification, making it a great fit for those looking to start or switch careers in the cloud industry.",
     ],
   },
   {
