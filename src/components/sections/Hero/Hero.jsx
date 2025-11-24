@@ -30,11 +30,11 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fadeInUp">
-            <img
+            {/* <img
               src="/assets/images/marcell.png"
               alt="Marcell Andreas"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary-100 shadow-2xl"
-            />
+            /> */}
           </div>
 
           <Heading level={1} className="text-white mb-4 animate-fadeInUp animation-delay-200">
