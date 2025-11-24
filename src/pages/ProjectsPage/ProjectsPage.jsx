@@ -93,9 +93,7 @@ export const ProjectsPage = () => {
                 <ProjectCard project={project} />
               </div>
             ))}
-            <div>
-              a
-            </div>
+            
           </div>
         ) : (
           <div className="text-center py-20">

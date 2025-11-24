@@ -1,15 +1,27 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { SectionContainer } from '../../components/sections/SectionContainer/SectionContainer';
-import { Card, CardBody } from '../../components/common/Card/Card';
-import { Heading, Text, Badge } from '../../components/common/Typography/Typography';
-import { Button, IconButton } from '../../components/common/Button/Button';
-import { PROJECTS_DATA } from '../../assets/data/PROJECTS.MOCK.JSX';
+import { useParams, useNavigate } from "react-router-dom";
+import { SectionContainer } from "../../components/sections/SectionContainer/SectionContainer";
+import { Card, CardBody } from "../../components/common/Card/Card";
+import {
+  Heading,
+  Text,
+  Badge,
+} from "../../components/common/Typography/Typography";
+import { Button, IconButton } from "../../components/common/Button/Button";
+import { PROJECTS_DATA } from "../../assets/data/PROJECTS.MOCK.JSX";
 
 export const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const project = PROJECTS_DATA.find(proj => proj.id === parseInt(id));
+  const gridLayout = [
+    "col-span-2 row-span-4",
+    "col-span-2 row-span-2 col-start-3",
+    "col-span-2 row-span-2 col-start-3 row-start-3",
+    "col-span-2 row-span-2 col-start-5",
+    "col-span-2 row-span-2 col-start-5 row-start-3",
+  ];
+
+  const project = PROJECTS_DATA.find((proj) => proj.id === parseInt(id));
 
   if (!project) {
     return (
@@ -18,7 +30,7 @@ export const ProjectDetail = () => {
           <Heading level={2} className="text-white mb-4">
             Project Not Found
           </Heading>
-          <Button onClick={() => navigate('/projects')}>
+          <Button onClick={() => navigate("/projects")}>
             Back to Projects
           </Button>
         </div>
@@ -69,14 +81,27 @@ export const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Main Image */}
-          <div className="mb-8" data-aos="fade-up">
-            <img
-              src={project.img}
-              alt={project.name}
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
-          </div>
+          {project.screenshots.length === 0 ? (
+            <div className="mb-8">
+              <img
+                src={project.img}
+                alt={project.name}
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
+            </div>
+          ) : (
+            <div className="grid grid-cols-6 grid-rows-4 gap-4 mb-8">
+              {project.screenshots.map((screenshot, idx) => (
+                <div key={idx} className={gridLayout[idx]}>
+                  <img
+                    src={screenshot}
+                    alt={`Screenshot ${idx + 1}`}
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Left Column - Details */}
@@ -141,15 +166,21 @@ export const ProjectDetail = () => {
                   </Heading>
                   <div className="space-y-3">
                     <div>
-                      <Text size="sm" color="primary">Duration</Text>
+                      <Text size="sm" color="primary">
+                        Duration
+                      </Text>
                       <Text size="sm">{project.duration}</Text>
                     </div>
                     <div>
-                      <Text size="sm" color="primary">Team Size</Text>
+                      <Text size="sm" color="primary">
+                        Team Size
+                      </Text>
                       <Text size="sm">{project.team}</Text>
                     </div>
                     <div>
-                      <Text size="sm" color="primary">Role</Text>
+                      <Text size="sm" color="primary">
+                        Role
+                      </Text>
                       <Text size="sm">{project.role}</Text>
                     </div>
                   </div>
@@ -163,19 +194,21 @@ export const ProjectDetail = () => {
                     Share Project
                   </Heading>
                   <div className="flex gap-2">
-                    {['logo-twitter', 'logo-linkedin', 'logo-facebook'].map((icon, idx) => (
-                      <button
-                        key={idx}
-                        className="
+                    {["logo-twitter", "logo-linkedin", "logo-facebook"].map(
+                      (icon, idx) => (
+                        <button
+                          key={idx}
+                          className="
                           w-10 h-10 rounded-full bg-white/10
                           flex items-center justify-center text-white
                           hover:bg-primary-100 hover:text-black
                           transition-all duration-300
                         "
-                      >
-                        <ion-icon name={icon}></ion-icon>
-                      </button>
-                    ))}
+                        >
+                          <ion-icon name={icon}></ion-icon>
+                        </button>
+                      )
+                    )}
                   </div>
                 </CardBody>
               </Card>
