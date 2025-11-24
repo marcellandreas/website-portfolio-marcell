@@ -1,16 +1,10 @@
-import { useState } from 'react';
-import { SectionContainer, SectionHeader } from '../SectionContainer/SectionContainer';
+import { useEffect, useState } from 'react';
 import { Card, CardBody } from '../../common/Card/Card';
-import { Heading, Text, Badge } from '../../common/Typography/Typography';
 import { Modal } from '../../common/Modal/Modal';
-import { ExperienceData } from '../../../assets/data/Experience.mock';
-import { EducationData, EducationNonFormalData } from '../../../assets/data/Education.mock';
+import { Heading, Text } from '../../common/Typography/Typography';
+import { SectionContainer, SectionHeader } from '../SectionContainer/SectionContainer';
+import useTimeline from '../../../hooks/useTimeline';
 
-const TIMELINE_DATA = {
-  experience: ExperienceData,
-  education: EducationData,
-  educationNonFormal: EducationNonFormalData
-};
 
 const TimelineItem = ({ item, onClick }) => (
   <Card className="relative">
@@ -49,10 +43,13 @@ const TimelineItem = ({ item, onClick }) => (
 );
 
 export const Timeline = () => {
-  const [activeTab, setActiveTab] = useState('experience');
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const data = TIMELINE_DATA[activeTab];
+const {
+    activeTab,
+    setActiveTab,
+    selectedItem,
+    setSelectedItem,
+    data
+  } = useTimeline();
 
   return (
     <SectionContainer id="timeline" background="primary">
