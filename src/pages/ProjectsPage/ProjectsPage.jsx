@@ -4,11 +4,8 @@ import { SectionContainer, SectionHeader } from '../../components/sections/Secti
 import { ProjectCard } from '../../components/sections/Projects/ProjectCard';
 import { Input } from '../../components/common/Form/FormFields';
 import { Button } from '../../components/common/Button/Button';
-import { experience_projects } from '../../assets/data';
 import { Heading, Text } from '../../components/common/Typography/Typography';
-import { PROJECTS_DATA } from '../../assets/data/PROJECTS.MOCK.JSX';
-
-
+import { PROJECTS_DATA } from '../../assets/data/projects.mock.jsx';
 
 const PROJECT_CATEGORIES = ['All', 'Web Application', 'Mobile App', 'API', 'UI/UX'];
 

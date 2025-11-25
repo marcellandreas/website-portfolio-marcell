@@ -7,7 +7,7 @@ import {
   Badge,
 } from "../../components/common/Typography/Typography";
 import { Button, IconButton } from "../../components/common/Button/Button";
-import { PROJECTS_DATA } from "../../assets/data/PROJECTS.MOCK.JSX";
+import { PROJECTS_DATA } from "../../assets/data/projects.mock.jsx";
 
 export const ProjectDetail = () => {
   const { id } = useParams();

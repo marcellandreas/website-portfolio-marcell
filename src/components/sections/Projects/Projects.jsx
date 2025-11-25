@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SectionContainer, SectionHeader } from '../SectionContainer/SectionContainer';
 import { ProjectCard } from './ProjectCard';
 import { Button } from '../../common/Button/Button';
-import { PROJECTS_DATA } from '../../../assets/data/PROJECTS.MOCK.JSX';
+import { PROJECTS_DATA } from '../../../assets/data/projects.mock.jsx';
 
 
 
